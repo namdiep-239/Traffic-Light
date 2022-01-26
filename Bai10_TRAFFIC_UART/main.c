@@ -70,11 +70,19 @@ unsigned char isButtonBack();
 
 //app MENU
 #define     NUM_OF_PAGES        2
+#define     DIS_NUM_OF_PAGES    3
 #define     MENU                0
 #define     DISPLAY             1
-#define     SETTING             2
-#define     P1_SETTING          3
-#define     P2_SETTING          4
+#define     NORMAL              2
+#define     RUSH                3
+#define     SLOW                4
+#define     SETTING             5
+#define     NORMAL_SETTING      6
+#define     RUSH_SETTING        7
+#define     P1_NORMAL_SETTING   8
+#define     P2_NORMAL_SETTING   9
+#define     P1_RUSH_SETTING     10
+#define     P2_RUSH_SETTING     11
 
 unsigned char option = MENU;
 //variable use for main menu
@@ -84,11 +92,31 @@ unsigned char menu[NUM_OF_PAGES] = {
     SETTING
 };
 
+//variable use for display
+unsigned char display_page = 0;
+unsigned char display_menu[DIS_NUM_OF_PAGES] = {
+    NORMAL,
+    RUSH,
+    SLOW
+};
+
+
+//variable use for setting menu
+unsigned char setting_menu_page = 0;
+unsigned char setting_menu[NUM_OF_PAGES] = {
+    NORMAL_SETTING,
+    RUSH_SETTING
+};
+
 //variable use for setting
 unsigned char setting_page = 0;
-unsigned char setting_menu[NUM_OF_PAGES] = {
-    P1_SETTING,
-    P2_SETTING
+unsigned char normal_setting_menu[NUM_OF_PAGES] = {
+    P1_NORMAL_SETTING,
+    P2_NORMAL_SETTING
+};
+unsigned char rush_setting_menu[NUM_OF_PAGES] = {
+    P1_RUSH_SETTING,
+    P2_RUSH_SETTING
 };
 
 #define     CHANGE_GREEN        0
@@ -104,10 +132,25 @@ unsigned int blinking = 0;
 #define     WAIT                4
 
 unsigned char statusOfLight = INIT_SYSTEM;
-unsigned char timeOfGreenPhase1 = 25;
-unsigned char timeOfYellowPhase1 = 3;
-unsigned char timeOfGreenPhase2 = 20;
-unsigned char timeOfYellowPhase2 = 3;
+
+unsigned char timeOfGreenPhase1 = 0;
+unsigned char timeOfYellowPhase1 = 0;
+unsigned char timeOfGreenPhase2 = 0;
+unsigned char timeOfYellowPhase2 = 0;
+
+// Normal mode
+unsigned char normalOfGreenPhase1 = 25;
+unsigned char normalOfYellowPhase1 = 3;
+unsigned char normalOfGreenPhase2 = 20;
+unsigned char normalOfYellowPhase2 = 3;
+
+// Rush mode
+unsigned char rushOfGreenPhase1 = 15;
+unsigned char rushOfYellowPhase1 = 3;
+unsigned char rushOfGreenPhase2 = 10;
+unsigned char rushOfYellowPhase2 = 5;
+
+
 unsigned char timeOfLight = 0;
 unsigned char cntOfLight = 0;
 unsigned char tp;
@@ -115,8 +158,12 @@ unsigned char k;
 
 void TrafficLight();
 void MainMenu();
-void TimeSetting1();
-void TimeSetting2();
+
+void NormalTimeSetting1();
+void NormalTimeSetting2();
+void RushTimeSetting1();
+void RushTimeSetting2();
+
 void UartDataReceiveProcess();
 void UartDataReceiveProcess_ElectronicDeviceControl();
 ////////////////////////////////////////////////////////////////////
@@ -413,8 +460,9 @@ void TrafficLight()
             Phase1_GreenOn();
             Phase1_RedOff();
             Phase2_RedOn();
-            LcdPrintStringS(1,0,"PHASE1_GREEN:   ");
-            LcdPrintNumS(1,14,timeOfLight);
+            LcdPrintStringS(0,0,"PHASE1_GREEN:   ");
+            LcdPrintNumS(0,14,timeOfLight);
+            LcdPrintCharS(1,0, LONG_LEFT_ARROW);
 
             if (timeOfLight == 0)
             {
@@ -426,8 +474,9 @@ void TrafficLight()
         case PHASE1_YELLOW:
             Phase1_YellowOn();
             Phase2_RedOn();
-            LcdPrintStringS(1,0,"PHASE1_YELLOW:  ");
-            LcdPrintNumS(1,14,timeOfLight);
+            LcdPrintStringS(0,0,"PHASE1_YELLOW:  ");
+            LcdPrintNumS(0,14,timeOfLight);
+            LcdPrintCharS(1,0, LONG_LEFT_ARROW);
 
             if (timeOfLight == 0)
             {
@@ -440,8 +489,9 @@ void TrafficLight()
             Phase2_GreenOn();
             Phase2_RedOff();
             Phase1_RedOn();
-            LcdPrintStringS(1,0,"PHASE2_GREEN:   ");
-            LcdPrintNumS(1,14,timeOfLight);
+            LcdPrintStringS(0,0,"PHASE2_GREEN:   ");
+            LcdPrintNumS(0,14,timeOfLight);
+            LcdPrintCharS(1,0, LONG_LEFT_ARROW);
 
             if (timeOfLight == 0)
             {
@@ -453,8 +503,9 @@ void TrafficLight()
         case PHASE2_YELLOW:
             Phase2_YellowOn();
             Phase1_RedOn();
-            LcdPrintStringS(1,0,"PHASE2_YELLOW:  ");
-            LcdPrintNumS(1,14,timeOfLight);
+            LcdPrintStringS(0,0,"PHASE2_YELLOW:  ");
+            LcdPrintNumS(0,14,timeOfLight);
+            LcdPrintCharS(1,0, LONG_LEFT_ARROW);
 
             if (timeOfLight == 0)
             {
@@ -472,11 +523,15 @@ void TrafficLight()
             {
                 Phase1_YellowOn();
                 Phase2_YellowOn();
+                LcdPrintLineS(0, "   SLOWLY RUN!  ");
+                LcdPrintCharS(1,0, LONG_LEFT_ARROW);
             }
             else
             {
                 Phase1_YellowOff();
                 Phase2_YellowOff();
+                LcdPrintLineS(0, "              ");
+                LcdPrintCharS(1,0, LONG_LEFT_ARROW);
             }
             break;
         default:
@@ -501,50 +556,53 @@ void UartDataReceiveProcess()
     LcdPrintNumS(0,15,statusReceive+4);
 }
 
-void reset_smol_package() {
+void reset_package() {
     LcdClearS();
+    statusOfLight = 0;
+    timeOfLight = 0;
+    cntOfLight = 0;
 //    timeDelay = 0;
 //    indexOfNumber = 0;
 //    indexOfID = 0;
 }
 
 unsigned char isButtonIncrease() {
-    if (key_code[0] == 1 || (key_code[0] > 20 && key_code[0] % 5 == 0)) return 1;
+    if (key_code[6] == 1 || (key_code[6] > 20 && key_code[6] % 5 == 0)) return 1;
     else return 0;
 }
 
 unsigned char isButtonDecrease() {
-    if (key_code[1] == 1  || (key_code[1] > 20 && key_code[1] % 5 == 0)) return 1;
+    if (key_code[4] == 1  || (key_code[4] > 20 && key_code[4] % 5 == 0)) return 1;
     else return 0;
 }
 
 unsigned char isButtonMode() {
-    if (key_code[2] == 1) return 1;
+    if (key_code[5] == 1) return 1;
     else return 0;
 }
 
 
 
-void TimeSetting1() {
+void NormalTimeSetting1() {
     switch (timeState) {
         case CHANGE_GREEN:
-            LcdPrintStringS(0,0,"GREEN PHASE1:   ");
-            LcdPrintNumS(0,14,timeOfGreenPhase1);
-            LcdPrintStringS(1,0,"YELLOW PHASE1:   ");
-            LcdPrintNumS(1,14,timeOfYellowPhase1);
+            LcdPrintStringS(0,0,"PHASE1 GREEN :   ");
+            LcdPrintNumS(0,14,normalOfGreenPhase1);
+            LcdPrintStringS(1,0,"PHASE1 YELLOW:   ");
+            LcdPrintNumS(1,14,normalOfYellowPhase1);
             
-            if (key_code[0] == 0 && key_code[1] == 0) {
+            if (key_code[4] == 0 && key_code[6] == 0) {
                if (blinking < 10) {
                      LcdPrintStringS(0,14,"  ");
                 }
             }
             if (isButtonIncrease()) {
-                timeOfGreenPhase1 = (timeOfGreenPhase1 + 1) % 100;
+                normalOfGreenPhase1 = (normalOfGreenPhase1 + 1) % 100;
                 
             }
             if (isButtonDecrease()) {
-                timeOfGreenPhase1--;
-                if (timeOfGreenPhase1 < 0) timeOfGreenPhase1 = 0;
+                normalOfGreenPhase1--;
+                if (normalOfGreenPhase1 < 0) normalOfGreenPhase1 = 0;
                 
             }
             if (isButtonMode()) {
@@ -553,27 +611,29 @@ void TimeSetting1() {
             break;
         
         case CHANGE_YELLOW:
-            LcdPrintStringS(0,0,"GREEN PHASE1:   ");
-            LcdPrintNumS(0,14,timeOfGreenPhase1);
-            LcdPrintStringS(1,0,"YELLOW PHASE1:   ");
-            LcdPrintNumS(1,14,timeOfYellowPhase1);
+            LcdPrintStringS(0,0,"PHASE1 GREEN :  ");
+            LcdPrintNumS(0,14,normalOfGreenPhase1);
+            LcdPrintStringS(1,0,"PHASE1 YELLOW:   ");
+            LcdPrintNumS(1,14,normalOfYellowPhase1);
             
-            if (key_code[0] == 0 && key_code[1] == 0) {
+            if (key_code[4] == 0 && key_code[6] == 0) {
                if (blinking < 10) {
                      LcdPrintStringS(1,14,"  ");
                 }
             }
             if (isButtonIncrease()) {
-                timeOfYellowPhase1 = (timeOfYellowPhase1 + 1) % 100;
+                normalOfYellowPhase1 = (normalOfYellowPhase1 + 1) % 100;
                 
             }
             if (isButtonDecrease()) {
-                timeOfYellowPhase1--;
-                if (timeOfYellowPhase1 < 0) timeOfYellowPhase1 = 0;
+                normalOfYellowPhase1--;
+                if (normalOfYellowPhase1 < 0) normalOfYellowPhase1 = 0;
                 
             }
             if (isButtonMode()) {
+                option = NORMAL_SETTING;
                 timeState = CHANGE_GREEN;
+                reset_package();
             }
             break;
     }
@@ -581,26 +641,26 @@ void TimeSetting1() {
     blinking = (blinking + 1) % 20;
 }
 
-void TimeSetting2() {
+void NormalTimeSetting2() {
     switch (timeState) {
         case CHANGE_GREEN:
-            LcdPrintStringS(0,0,"GREEN PHASE2:   ");
-            LcdPrintNumS(0,14,timeOfGreenPhase2);
-            LcdPrintStringS(1,0,"YELLOW PHASE2:   ");
-            LcdPrintNumS(1,14,timeOfYellowPhase2);
+            LcdPrintStringS(0,0,"PHASE2 GREEN :   ");
+            LcdPrintNumS(0,14,normalOfGreenPhase2);
+            LcdPrintStringS(1,0,"PHASE2 YELLOW:   ");
+            LcdPrintNumS(1,14,normalOfYellowPhase2);
             
-            if (key_code[0] == 0 && key_code[1] == 0) {
+            if (key_code[4] == 0 && key_code[6] == 0) {
                if (blinking < 10) {
                      LcdPrintStringS(0,14,"  ");
                 }
             }
             if (isButtonIncrease()) {
-                timeOfGreenPhase2 = (timeOfGreenPhase2 + 1) % 100;
+                normalOfGreenPhase2 = (normalOfGreenPhase2 + 1) % 100;
                 
             }
             if (isButtonDecrease()) {
-                timeOfGreenPhase2--;
-                if (timeOfGreenPhase2 < 0) timeOfGreenPhase2 = 0;
+                normalOfGreenPhase2--;
+                if (normalOfGreenPhase2 < 0) normalOfGreenPhase2 = 0;
                 
             }
             if (isButtonMode()) {
@@ -609,27 +669,29 @@ void TimeSetting2() {
             break;
         
         case CHANGE_YELLOW:
-            LcdPrintStringS(0,0,"GREEN PHASE1:   ");
-            LcdPrintNumS(0,14,timeOfGreenPhase2);
-            LcdPrintStringS(1,0,"YELLOW PHASE1:   ");
-            LcdPrintNumS(1,14,timeOfYellowPhase2);
+            LcdPrintStringS(0,0,"PHASE2 GREEN :   ");
+            LcdPrintNumS(0,14,normalOfGreenPhase2);
+            LcdPrintStringS(1,0,"PHASE2 YELLOW:   ");
+            LcdPrintNumS(1,14,normalOfYellowPhase2);
             
-            if (key_code[0] == 0 && key_code[1] == 0) {
+            if (key_code[4] == 0 && key_code[6] == 0) {
                if (blinking < 10) {
                      LcdPrintStringS(1,14,"  ");
                 }
             }
             if (isButtonIncrease()) {
-                timeOfYellowPhase2 = (timeOfYellowPhase2 + 1) % 100;
+                normalOfYellowPhase2 = (normalOfYellowPhase2 + 1) % 100;
                 
             }
             if (isButtonDecrease()) {
-                timeOfYellowPhase2--;
-                if (timeOfYellowPhase2 < 0) timeOfYellowPhase2 = 0;
+                normalOfYellowPhase2--;
+                if (normalOfYellowPhase2 < 0) normalOfYellowPhase2 = 0;
                 
             }
             if (isButtonMode()) {
+                option = NORMAL_SETTING;
                 timeState = CHANGE_GREEN;
+                reset_package();
             }
             break;
     }
@@ -637,6 +699,121 @@ void TimeSetting2() {
     blinking = (blinking + 1) % 20;
 }
 
+void RushTimeSetting1() {
+    switch (timeState) {
+        case CHANGE_GREEN:
+            LcdPrintStringS(0,0,"PHASE1 GREEN :   ");
+            LcdPrintNumS(0,14,rushOfGreenPhase1);
+            LcdPrintStringS(1,0,"PHASE1 YELLOW:   ");
+            LcdPrintNumS(1,14,rushOfYellowPhase1);
+            
+            if (key_code[4] == 0 && key_code[6] == 0) {
+               if (blinking < 10) {
+                     LcdPrintStringS(0,14,"  ");
+                }
+            }
+            if (isButtonIncrease()) {
+                rushOfGreenPhase1 = (rushOfGreenPhase1 + 1) % 100;
+                
+            }
+            if (isButtonDecrease()) {
+                rushOfGreenPhase1--;
+                if (rushOfGreenPhase1 < 0) rushOfGreenPhase1 = 0;
+                
+            }
+            if (isButtonMode()) {
+                timeState = CHANGE_YELLOW;
+            }
+            break;
+        
+        case CHANGE_YELLOW:
+            LcdPrintStringS(0,0,"PHASE1 GREEN :  ");
+            LcdPrintNumS(0,14,rushOfGreenPhase1);
+            LcdPrintStringS(1,0,"PHASE1 YELLOW:   ");
+            LcdPrintNumS(1,14,rushOfYellowPhase1);
+            
+            if (key_code[4] == 0 && key_code[6] == 0) {
+               if (blinking < 10) {
+                     LcdPrintStringS(1,14,"  ");
+                }
+            }
+            if (isButtonIncrease()) {
+                rushOfYellowPhase1 = (rushOfYellowPhase1 + 1) % 100;
+                
+            }
+            if (isButtonDecrease()) {
+                rushOfYellowPhase1--;
+                if (rushOfYellowPhase1 < 0) rushOfYellowPhase1 = 0;
+                
+            }
+            if (isButtonMode()) {
+                option = RUSH_SETTING;
+                timeState = CHANGE_GREEN;
+                reset_package();
+            }
+            break;
+    }
+    
+    blinking = (blinking + 1) % 20;
+}
+
+void RushTimeSetting2() {
+    switch (timeState) {
+        case CHANGE_GREEN:
+            LcdPrintStringS(0,0,"PHASE1 GREEN :   ");
+            LcdPrintNumS(0,14,rushOfGreenPhase2);
+            LcdPrintStringS(1,0,"PHASE1 YELLOW:   ");
+            LcdPrintNumS(1,14,rushOfYellowPhase2);
+            
+            if (key_code[4] == 0 && key_code[6] == 0) {
+               if (blinking < 10) {
+                     LcdPrintStringS(0,14,"  ");
+                }
+            }
+            if (isButtonIncrease()) {
+                rushOfGreenPhase2 = (rushOfGreenPhase2 + 1) % 100;
+                
+            }
+            if (isButtonDecrease()) {
+                rushOfGreenPhase2--;
+                if (rushOfGreenPhase2 < 0) rushOfGreenPhase2 = 0;
+                
+            }
+            if (isButtonMode()) {
+                timeState = CHANGE_YELLOW;
+            }
+            break;
+        
+        case CHANGE_YELLOW:
+            LcdPrintStringS(0,0,"PHASE1 GREEN :  ");
+            LcdPrintNumS(0,14,rushOfGreenPhase2);
+            LcdPrintStringS(1,0,"PHASE1 YELLOW:   ");
+            LcdPrintNumS(1,14,rushOfYellowPhase2);
+            
+            if (key_code[4] == 0 && key_code[6] == 0) {
+               if (blinking < 10) {
+                     LcdPrintStringS(1,14,"  ");
+                }
+            }
+            if (isButtonIncrease()) {
+                rushOfYellowPhase2 = (rushOfYellowPhase2 + 1) % 100;
+                
+            }
+            if (isButtonDecrease()) {
+                rushOfYellowPhase2--;
+                if (rushOfYellowPhase2 < 0) rushOfYellowPhase2 = 0;
+                
+            }
+            if (isButtonMode()) {
+                option = RUSH_SETTING;
+                timeState = CHANGE_GREEN;
+                reset_package();
+            }
+            break;
+    }
+    
+    blinking = (blinking + 1) % 20;
+}
 
 void MainMenu() {
     switch(option){
@@ -648,7 +825,7 @@ void MainMenu() {
                     LcdPrintCharS(1,14,RIGHT_ARROW);
                     break;
                 case 1:
-                    LcdPrintLineS(0, "2.SETTING");
+                    LcdPrintLineS(0, "   2.SETTING    ");
                     LcdPrintCharS(1,0,LEFT_ARROW);
                     LcdPrintCharS(1,7,CENTER_NODE);
                     break;
@@ -661,7 +838,7 @@ void MainMenu() {
                 menu_page++;
                 if (menu_page >= NUM_OF_PAGES)
                     menu_page = NUM_OF_PAGES - 1;
-                reset_smol_package();
+                reset_package();
             }
             if (isButtonBack()){
                 if (menu_page <= 0){
@@ -669,33 +846,157 @@ void MainMenu() {
                 }
                 else {
                     menu_page--;
-                    reset_smol_package();
+                    reset_package();
                 }
             }
             if (isButtonEnter()) {
                 option = menu[menu_page];
-                reset_smol_package();
+                reset_package();
             }
             
             break;
         
         case DISPLAY:
-            TrafficLight();
-            if (isButtonBack()) {
-                option = MENU;
-                reset_smol_package();
-            }
-            break;
-            
-        case SETTING:
-            switch(setting_page){
+            switch(display_page){
                 case 0:
-                    LcdPrintLineS(0, "1.PHASE 1");
+                    
+                    LcdPrintLineS(0, " 1.NORMAL MODE  ");
+                    LcdPrintCharS(1,0, LONG_LEFT_ARROW);
                     LcdPrintCharS(1,7,CENTER_NODE);
                     LcdPrintCharS(1,14,RIGHT_ARROW);
                     break;
                 case 1:
-                    LcdPrintLineS(0, "2.PHASE 2");
+                    LcdPrintLineS(0, "  2.RUSH MODE   ");
+                    LcdPrintCharS(1,0,LEFT_ARROW);
+                    LcdPrintCharS(1,7,CENTER_NODE);
+                    LcdPrintCharS(1,14,RIGHT_ARROW);
+                    break;
+                case 2:
+                    LcdPrintLineS(0, "  3.SLOW MODE   ");
+                    LcdPrintCharS(1,0,LEFT_ARROW);
+                    LcdPrintCharS(1,7,CENTER_NODE);
+                    break;
+                default:
+                    display_page = 0;
+                    break;
+            }
+            if (isButtonNext()){
+                display_page++;
+                if (display_page >= DIS_NUM_OF_PAGES)
+                    display_page = DIS_NUM_OF_PAGES - 1;
+                reset_package();
+            }
+            if (isButtonBack()){
+                if (display_page <= 0){
+                    display_page = 0;
+                    option = MENU;
+                    reset_package();
+                }
+                else {
+                    display_page--;
+                    reset_package();
+                }
+            }
+            if (isButtonEnter()) {
+                option = display_menu[display_page];
+                reset_package();
+            }
+            
+            break;
+
+            
+        case NORMAL:
+            //update time mode
+            timeOfGreenPhase1 = normalOfGreenPhase1;
+            timeOfYellowPhase1 = normalOfYellowPhase1;
+            timeOfGreenPhase2 = normalOfGreenPhase2;
+            timeOfYellowPhase2 = normalOfYellowPhase2;
+            
+            TrafficLight();
+            
+            if (isButtonBack()) {
+                option = DISPLAY;
+                reset_package();
+            }
+            break;
+            
+        case RUSH:
+            //update time mode
+            timeOfGreenPhase1 = rushOfGreenPhase1;
+            timeOfYellowPhase1 = rushOfYellowPhase1;
+            timeOfGreenPhase2 = rushOfGreenPhase2;
+            timeOfYellowPhase2 = rushOfYellowPhase2;
+            
+            TrafficLight();
+            
+            if (isButtonBack()) {
+                option = DISPLAY;
+                reset_package();
+            }
+            break;
+            
+        case SLOW:
+            statusOfLight = WAIT;
+            TrafficLight();
+            if (isButtonBack()) {
+                option = DISPLAY;
+                reset_package();
+                statusOfLight = 0;
+            }
+            break;
+            
+        case SETTING:
+            switch(setting_menu_page){
+                case 0:
+                    LcdPrintLineS(0, "1.NORMAL SETTING ");
+                    LcdPrintCharS(1,0, LONG_LEFT_ARROW);
+                    LcdPrintCharS(1,7,CENTER_NODE);
+                    LcdPrintCharS(1,14,RIGHT_ARROW);
+                    break;
+                case 1:
+                    LcdPrintLineS(0, " 2.RUSH SETTING  ");
+                    LcdPrintCharS(1,0,LEFT_ARROW);
+                    LcdPrintCharS(1,7,CENTER_NODE);
+                    break;
+                default:
+                    setting_menu_page = 0;
+                    break;
+            }
+            if (isButtonNext()){
+                setting_menu_page++;
+                if (setting_menu_page >= NUM_OF_PAGES)
+                    setting_menu_page = NUM_OF_PAGES - 1;
+                reset_package();
+            }
+            if (isButtonBack()){
+                if (setting_menu_page <= 0){
+                    setting_menu_page = 0;
+                    option = MENU;
+                    reset_package();
+                }
+                else {
+                    setting_menu_page--;
+                    reset_package();
+                }
+            }
+            if (isButtonEnter()) {
+                option = setting_menu[setting_menu_page];
+                reset_package();
+            }
+            
+            break;
+            
+        case NORMAL_SETTING:
+            switch(setting_page){
+                case 0:
+                    
+                    LcdPrintLineS(0, "   1.PHASE 1    ");
+                    LcdPrintCharS(1,0, LONG_LEFT_ARROW);
+                    LcdPrintCharS(1,7,CENTER_NODE);
+                    LcdPrintCharS(1,14,RIGHT_ARROW);
+                    break;
+                case 1:
+                    LcdPrintLineS(0, "   2.PHASE 2    ");
                     LcdPrintCharS(1,0,LEFT_ARROW);
                     LcdPrintCharS(1,7,CENTER_NODE);
                     break;
@@ -707,39 +1008,79 @@ void MainMenu() {
                 setting_page++;
                 if (setting_page >= NUM_OF_PAGES)
                     setting_page = NUM_OF_PAGES - 1;
-                reset_smol_package();
+                reset_package();
             }
             if (isButtonBack()){
                 if (setting_page <= 0){
                     setting_page = 0;
-                    option = MENU;
-                    reset_smol_package();
+                    option = SETTING;
+                    reset_package();
                 }
                 else {
                     setting_page--;
-                    reset_smol_package();
+                    reset_package();
                 }
             }
             if (isButtonEnter()) {
-                option = setting_menu[setting_page];
-                reset_smol_package();
+                option = normal_setting_menu[setting_page];
+                reset_package();
             }
             
             break;
             
-        case P1_SETTING:
-            TimeSetting1();
-            if (isButtonBack()) {
-                option = SETTING;
-                reset_smol_package();
-            }
+        case P1_NORMAL_SETTING:
+            NormalTimeSetting1();
             break;
-        case P2_SETTING:
-            TimeSetting2();
-            if (isButtonBack()) {
-                option = SETTING;
-                reset_smol_package();
+        case P2_NORMAL_SETTING:
+            NormalTimeSetting2();
+            break;
+            
+        case RUSH_SETTING:
+            switch(setting_page){
+                case 0:
+                    LcdPrintLineS(0, "   1.PHASE 1    ");
+                    LcdPrintCharS(1,0, LONG_LEFT_ARROW);
+                    LcdPrintCharS(1,7,CENTER_NODE);
+                    LcdPrintCharS(1,14,RIGHT_ARROW);
+                    break;
+                case 1:
+                    LcdPrintLineS(0, "   2.PHASE 2    ");
+                    LcdPrintCharS(1,0,LEFT_ARROW);
+                    LcdPrintCharS(1,7,CENTER_NODE);
+                    break;
+                default:
+                    setting_page = 0;
+                    break;
             }
+            if (isButtonNext()){
+                setting_page++;
+                if (setting_page >= NUM_OF_PAGES)
+                    setting_page = NUM_OF_PAGES - 1;
+                reset_package();
+            }
+            if (isButtonBack()){
+                if (setting_page <= 0){
+                    setting_page = 0;
+                    option = SETTING;
+                    reset_package();
+                }
+                else {
+                    setting_page--;
+                    reset_package();
+                }
+            }
+            if (isButtonEnter()) {
+                option = rush_setting_menu[setting_page];
+                reset_package();
+            }
+            
+            break;
+            
+        case P1_RUSH_SETTING:
+            RushTimeSetting1();
+            break;
+        case P2_RUSH_SETTING:
+            RushTimeSetting2();
             break;
     }
         

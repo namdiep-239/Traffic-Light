@@ -1,11 +1,11 @@
-Warning[2056] D:\Document\DO_AN\Tailieu\Bai10_TRAFFIC_UART\lcd\lcd.c 92 : expression is always true
-Warning[2056] D:\Document\DO_AN\Tailieu\Bai10_TRAFFIC_UART\lcd\lcd.c 106 : expression is always true
-Warning[2056] D:\Document\DO_AN\Tailieu\Bai10_TRAFFIC_UART\lcd\lcd.c 120 : expression is always true
-Warning[2056] D:\Document\DO_AN\Tailieu\Bai10_TRAFFIC_UART\lcd\lcd.c 134 : expression is always true
-Warning[2056] D:\Document\DO_AN\Tailieu\Bai10_TRAFFIC_UART\lcd\lcd.c 208 : expression is always true
-Warning[2056] D:\Document\DO_AN\Tailieu\Bai10_TRAFFIC_UART\lcd\lcd.c 225 : expression is always true
-Warning[2066] D:\Document\DO_AN\Tailieu\Bai10_TRAFFIC_UART\lcd\lcd.c 309 : type qualifier mismatch in assignment
-Warning[2066] D:\Document\DO_AN\Tailieu\Bai10_TRAFFIC_UART\lcd\lcd.c 473 : type qualifier mismatch in assignment
-Warning[2066] D:\Document\DO_AN\Tailieu\Bai10_TRAFFIC_UART\lcd\lcd.c 474 : type qualifier mismatch in assignment
-Warning[2066] D:\Document\DO_AN\Tailieu\Bai10_TRAFFIC_UART\lcd\lcd.c 475 : type qualifier mismatch in assignment
-Warning[2066] D:\Document\DO_AN\Tailieu\Bai10_TRAFFIC_UART\lcd\lcd.c 476 : type qualifier mismatch in assignment
+Warning[2056] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c 92 : expression is always true
+Warning[2056] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c 106 : expression is always true
+Warning[2056] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c 120 : expression is always true
+Warning[2056] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c 134 : expression is always true
+Warning[2056] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c 208 : expression is always true
+Warning[2056] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c 225 : expression is always true
+Warning[2066] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c 309 : type qualifier mismatch in assignment
+Warning[2066] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c 473 : type qualifier mismatch in assignment
+Warning[2066] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c 474 : type qualifier mismatch in assignment
+Warning[2066] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c 475 : type qualifier mismatch in assignment
+Warning[2066] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c 476 : type qualifier mismatch in assignment
