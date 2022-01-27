@@ -1,5 +1,5 @@
 MPLINK 5.00, LINKER
-Linker Map File - Created Wed Jan 26 20:59:27 2022
+Linker Map File - Created Thu Jan 27 20:44:33 2022
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
@@ -7,63 +7,66 @@ Linker Map File - Created Wed Jan 26 20:59:27 2022
                _entry_scn       code   0x000000    program   0x000006
            .code___init.o       code   0x000006    program   0x000002
       InterruptVectorHigh       code   0x000008    program   0x000006
-         .romdata_timer.o    romdata   0x00000e    program   0x000000
            .romdata_lcd.o    romdata   0x00000e    program   0x000000
+         .romdata_timer.o    romdata   0x00000e    program   0x000000
            .romdata_i2c.o    romdata   0x00000e    program   0x000000
      .romdata_interrupt.o    romdata   0x00000e    program   0x000000
-        .romdata_button.o    romdata   0x00000e    program   0x000000
            .romdata_adc.o    romdata   0x00000e    program   0x000000
+        .romdata_button.o    romdata   0x00000e    program   0x000000
            .idata_pwm.o_i    romdata   0x00000e    program   0x000001
            .romdata_pwm.o    romdata   0x00000e    program   0x000000
 .romdata_simulate_machine.o    romdata   0x00000e    program   0x000000
+    .romdata_simu_clock.o    romdata   0x00000e    program   0x000000
       .romdata_fxd0808u.o    romdata   0x00000e    program   0x000000
       .romdata_fxd1616u.o    romdata   0x00000e    program   0x000000
-      .romdata_fxd2424u.o    romdata   0x00000e    program   0x000000
          .romdata_c018i.o    romdata   0x00000e    program   0x000000
-      .romdata_fxd3232u.o    romdata   0x00000e    program   0x000000
           .idata_uart.o_i    romdata   0x00000e    program   0x000000
-       .romdata_fxm3232.o    romdata   0x00000e    program   0x000000
-          .romdata_main.o    romdata   0x00000e    program   0x000000
           .romdata_uart.o    romdata   0x00000e    program   0x000000
         .romdata___init.o    romdata   0x00000e    program   0x000000
+          .romdata_main.o    romdata   0x00000e    program   0x000000
+       .romdata_fxm3232.o    romdata   0x00000e    program   0x000000
+      .romdata_fxd3232u.o    romdata   0x00000e    program   0x000000
+      .romdata_fxd2424u.o    romdata   0x00000e    program   0x000000
      .idata_interrupt.o_i    romdata   0x00000f    program   0x000004
-         .idata_c018i.o_i    romdata   0x000013    program   0x000000
-           .idata_adc.o_i    romdata   0x000013    program   0x000000
-        .idata___init.o_i    romdata   0x000013    program   0x000000
-      .idata_fxd0808u.o_i    romdata   0x000013    program   0x000000
        .idata_fxm3232.o_i    romdata   0x000013    program   0x000000
+      .idata_fxd0808u.o_i    romdata   0x000013    program   0x000000
+        .idata___init.o_i    romdata   0x000013    program   0x000000
       .idata_fxd1616u.o_i    romdata   0x000013    program   0x000000
-      .idata_fxd2424u.o_i    romdata   0x000013    program   0x000000
       .idata_fxd3232u.o_i    romdata   0x000013    program   0x000000
+      .idata_fxd2424u.o_i    romdata   0x000013    program   0x000000
+           .idata_adc.o_i    romdata   0x000013    program   0x000000
+         .idata_c018i.o_i    romdata   0x000013    program   0x000000
             .code_c018i.o       code   0x000014    program   0x000000
        InterruptVectorLow       code   0x000018    program   0x000006
-                   .cinit    romdata   0x00001e    program   0x000062
-             .code_main.o       code   0x000080    program   0x001792
-              .code_lcd.o       code   0x001812    program   0x000ff6
-           .code_button.o       code   0x002808    program   0x0007b4
-            .code_timer.o       code   0x002fbc    program   0x00051c
-              .code_i2c.o       code   0x0034d8    program   0x000340
-        .code_interrupt.o       code   0x003818    program   0x0001f4
-             .stringtable    romdata   0x003a0c    program   0x0001c6
-             .code_uart.o       code   0x003bd2    program   0x000152
- .code_simulate_machine.o       code   0x003d24    program   0x000120
-                     PROG       code   0x003e44    program   0x0000a6
-               _cinit_scn       code   0x003eea    program   0x00009e
-              .code_adc.o       code   0x003f88    program   0x000090
-          .code_fxm3232.o       code   0x004018    program   0x000070
-         .code_fxd3232u.o       code   0x004088    program   0x000048
-         .code_fxd2424u.o       code   0x0040d0    program   0x00003a
-              .code_pwm.o       code   0x00410a    program   0x000038
-         .code_fxd1616u.o       code   0x004142    program   0x00002c
-                    .code       code   0x00416e    program   0x000020
-             _startup_scn       code   0x00418e    program   0x00001c
-         .code_fxd0808u.o       code   0x0041aa    program   0x00001c
-         .idata_timer.o_i    romdata   0x0041c6    program   0x000020
-.idata_simulate_machine.o_i    romdata   0x0041e6    program   0x000013
-          .idata_main.o_i    romdata   0x0041f9    program   0x000059
-           .idata_lcd.o_i    romdata   0x004252    program   0x000061
-           .idata_i2c.o_i    romdata   0x0042b3    program   0x00001b
-        .idata_button.o_i    romdata   0x0042ce    program   0x000028
+                   .cinit    romdata   0x00001e    program   0x00006e
+             .code_main.o       code   0x00008c    program   0x00182e
+              .code_lcd.o       code   0x0018ba    program   0x000ff6
+       .code_simu_clock.o       code   0x0028b0    program   0x000944
+           .code_button.o       code   0x0031f4    program   0x0007b4
+            .code_timer.o       code   0x0039a8    program   0x00051c
+              .code_i2c.o       code   0x003ec4    program   0x000340
+        .code_interrupt.o       code   0x004204    program   0x0001f4
+             .stringtable    romdata   0x0043f8    program   0x0001de
+             .code_uart.o       code   0x0045d6    program   0x000152
+ .code_simulate_machine.o       code   0x004728    program   0x000120
+                     PROG       code   0x004848    program   0x0000a6
+               _cinit_scn       code   0x0048ee    program   0x00009e
+              .code_adc.o       code   0x00498c    program   0x000090
+          .code_fxm3232.o       code   0x004a1c    program   0x000070
+         .code_fxd3232u.o       code   0x004a8c    program   0x000048
+         .code_fxd2424u.o       code   0x004ad4    program   0x00003a
+              .code_pwm.o       code   0x004b0e    program   0x000038
+         .code_fxd1616u.o       code   0x004b46    program   0x00002c
+                    .code       code   0x004b72    program   0x000020
+             _startup_scn       code   0x004b92    program   0x00001c
+         .code_fxd0808u.o       code   0x004bae    program   0x00001c
+         .idata_timer.o_i    romdata   0x004bca    program   0x000020
+.idata_simulate_machine.o_i    romdata   0x004bea    program   0x000013
+    .idata_simu_clock.o_i    romdata   0x004bfd    program   0x00000c
+          .idata_main.o_i    romdata   0x004c09    program   0x00005a
+           .idata_lcd.o_i    romdata   0x004c63    program   0x000061
+           .idata_i2c.o_i    romdata   0x004cc4    program   0x00001b
+        .idata_button.o_i    romdata   0x004cdf    program   0x000028
     .config_300001_main.o    romdata   0x300001    program   0x000001
     .config_300002_main.o    romdata   0x300002    program   0x000001
     .config_300003_main.o    romdata   0x300003    program   0x000001
@@ -79,34 +82,36 @@ Linker Map File - Created Wed Jan 26 20:59:27 2022
                  .tmpdata      udata   0x000010       data   0x00000a
 .udata_simulate_machine.o      udata   0x000080       data   0x000065
              .idata_i2c.o      idata   0x0000e5       data   0x00001b
-            .idata_main.o      idata   0x000100       data   0x000059
-          .idata_button.o      idata   0x000159       data   0x000028
-           .idata_timer.o      idata   0x000181       data   0x000020
-.idata_simulate_machine.o      idata   0x0001a1       data   0x000013
-           .udata_c018i.o      udata   0x0001b4       data   0x00000a
-            .udata_main.o      udata   0x0001be       data   0x000007
-       .idata_interrupt.o      idata   0x0001c5       data   0x000004
-             .udata_i2c.o      udata   0x0001c9       data   0x000001
-             .idata_pwm.o      idata   0x0001ca       data   0x000001
-        .udata_fxd1616u.o      udata   0x0001cb       data   0x000000
-        .idata_fxd0808u.o      idata   0x0001cb       data   0x000000
-        .idata_fxd1616u.o      idata   0x0001cb       data   0x000000
-        .udata_fxd0808u.o      udata   0x0001cb       data   0x000000
-        .udata_fxd2424u.o      udata   0x0001cb       data   0x000000
-        .idata_fxd2424u.o      idata   0x0001cb       data   0x000000
-        .udata_fxd3232u.o      udata   0x0001cb       data   0x000000
-        .idata_fxd3232u.o      idata   0x0001cb       data   0x000000
-         .udata_fxm3232.o      udata   0x0001cb       data   0x000000
-         .idata_fxm3232.o      idata   0x0001cb       data   0x000000
-          .udata___init.o      udata   0x0001cb       data   0x000000
-          .idata___init.o      idata   0x0001cb       data   0x000000
-             .idata_adc.o      idata   0x0001cb       data   0x000000
-           .udata_timer.o      udata   0x0001cb       data   0x000000
-       .udata_interrupt.o      udata   0x0001cb       data   0x000000
-          .udata_button.o      udata   0x0001cb       data   0x000000
-            .idata_uart.o      idata   0x0001cb       data   0x000000
-            .udata_uart.o      udata   0x0001cb       data   0x000000
-           .idata_c018i.o      idata   0x0001cb       data   0x000000
+            .idata_main.o      idata   0x000100       data   0x00005a
+          .idata_button.o      idata   0x00015a       data   0x000028
+           .idata_timer.o      idata   0x000182       data   0x000020
+.idata_simulate_machine.o      idata   0x0001a2       data   0x000013
+      .idata_simu_clock.o      idata   0x0001b5       data   0x00000c
+           .udata_c018i.o      udata   0x0001c1       data   0x00000a
+            .udata_main.o      udata   0x0001cb       data   0x000007
+       .idata_interrupt.o      idata   0x0001d2       data   0x000004
+             .udata_i2c.o      udata   0x0001d6       data   0x000001
+             .idata_pwm.o      idata   0x0001d7       data   0x000001
+      .udata_simu_clock.o      udata   0x0001d8       data   0x000000
+         .udata_fxm3232.o      udata   0x0001d8       data   0x000000
+        .udata_fxd0808u.o      udata   0x0001d8       data   0x000000
+        .idata_fxd0808u.o      idata   0x0001d8       data   0x000000
+        .udata_fxd1616u.o      udata   0x0001d8       data   0x000000
+        .idata_fxd1616u.o      idata   0x0001d8       data   0x000000
+        .udata_fxd2424u.o      udata   0x0001d8       data   0x000000
+        .idata_fxd2424u.o      idata   0x0001d8       data   0x000000
+        .udata_fxd3232u.o      udata   0x0001d8       data   0x000000
+        .idata_fxd3232u.o      idata   0x0001d8       data   0x000000
+         .idata_fxm3232.o      idata   0x0001d8       data   0x000000
+             .idata_adc.o      idata   0x0001d8       data   0x000000
+          .udata___init.o      udata   0x0001d8       data   0x000000
+           .idata_c018i.o      idata   0x0001d8       data   0x000000
+          .idata___init.o      idata   0x0001d8       data   0x000000
+           .udata_timer.o      udata   0x0001d8       data   0x000000
+       .udata_interrupt.o      udata   0x0001d8       data   0x000000
+          .udata_button.o      udata   0x0001d8       data   0x000000
+            .idata_uart.o      idata   0x0001d8       data   0x000000
+            .udata_uart.o      udata   0x0001d8       data   0x000000
                    .stack      udata   0x000e00       data   0x000100
              .idata_lcd.o      idata   0x000f00       data   0x000061
              .udata_adc.o      udata   0x000f61       data   0x00001a
@@ -120,91 +125,95 @@ Linker Map File - Created Wed Jan 26 20:59:27 2022
                                Start         End      
                            ---------   ---------      
                             0x000000    0x000012      
-                            0x000018    0x0042f5      
+                            0x000018    0x004d06      
                             0x300001    0x300003      
                             0x300005    0x300006      
                             0x300008    0x30000d      
-            17148 out of 66584 program addresses used, program memory utilization is 25%
+            19725 out of 66584 program addresses used, program memory utilization is 29%
 
 
 
                               Symbols - Sorted by Name
                      Name    Address   Location    Storage File                     
                 ---------  ---------  ---------  --------- ---------                
-         App_PasswordDoor   0x000384    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-                  BCD2Dec   0x0034d8    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
-            CheckPassword   0x0004ba    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-              CloseOutput   0x00023a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-                   D1616S   0x003e66    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                D1616SNEG   0x003e74    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                 D1616SOK   0x003e70    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                  D1616SX   0x003e86    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                   D2424S   0x003eba    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                D2424SNEG   0x003ec8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                 D2424SOK   0x003ec4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                  D2424SX   0x003ee0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                  DA1616S   0x003e56    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                  DA2424S   0x003ea6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                  Dec2BCD   0x003516    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
-       DisplayDataReceive   0x003dba    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
-         DisplayLcdScreen   0x002152    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-        DisplayLcdScreen2   0x00224a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-      DisplayLcdScreenOld   0x0022d0    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-                 FXD0808U   0x0041aa    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd0808u.c
-                 FXD1616S   0x003e44    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                 FXD1616U   0x004142    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
-                 FXD2424S   0x003e90    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                 FXD2424U   0x0040d0    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424u.c
-                 FXD3232U   0x004088    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
-                  FXM3232   0x004018    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm3232.c
+         App_PasswordDoor   0x00039e    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+                  BCD2Dec   0x003ec4    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
+            CheckPassword   0x0004d4    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+              CloseOutput   0x000254    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+                   D1616S   0x00486a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                D1616SNEG   0x004878    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                 D1616SOK   0x004874    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                  D1616SX   0x00488a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                   D2424S   0x0048be    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                D2424SNEG   0x0048cc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                 D2424SOK   0x0048c8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                  D2424SX   0x0048e4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                  DA1616S   0x00485a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                  DA2424S   0x0048aa    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                  Dec2BCD   0x003f02    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
+       DisplayDataReceive   0x0047be    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+         DisplayLcdScreen   0x0021fa    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+        DisplayLcdScreen2   0x0022f2    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+      DisplayLcdScreenOld   0x002378    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+          DisplayRealTime   0x002916    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+          DisplayTempTime   0x002a90    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+                 FXD0808U   0x004bae    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd0808u.c
+                 FXD1616S   0x004848    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                 FXD1616U   0x004b46    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
+                 FXD2424S   0x004894    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                 FXD2424U   0x004ad4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424u.c
+                 FXD3232U   0x004a8c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
+                  FXM3232   0x004a1c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm3232.c
       InterruptVectorHigh   0x000008    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\interrupt\interrupt.c
        InterruptVectorLow   0x000018    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\interrupt\interrupt.c
-                LcdClearS   0x0020f4    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-            LcdCreateChar   0x0026de    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-            LcdPrintCharS   0x00233a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-            LcdPrintLineS   0x002652    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-              LcdPrintNum   0x002032    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-             LcdPrintNumS   0x0023ae    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-           LcdPrintString   0x00207a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-          LcdPrintStringS   0x0025fc    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-                 LockDoor   0x0005da    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-                 MainMenu   0x0012ea    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-       NormalTimeSetting1   0x0009ee    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-       NormalTimeSetting2   0x000c2a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-               OpenOutput   0x0001ea    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-          Phase1_GreenOff   0x0005f6    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-           Phase1_GreenOn   0x0005e8    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-            Phase1_RedOff   0x00062e    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-             Phase1_RedOn   0x000620    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-         Phase1_YellowOff   0x000612    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-          Phase1_YellowOn   0x000604    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-          Phase2_GreenOff   0x00064a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-           Phase2_GreenOn   0x00063c    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-            Phase2_RedOff   0x000682    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-             Phase2_RedOn   0x000674    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-         Phase2_YellowOff   0x000666    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-          Phase2_YellowOn   0x000658    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-            ReverseOutput   0x00028a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-         RushTimeSetting1   0x000e66    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-         RushTimeSetting2   0x0010a2    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-             SetTimer0_ms   0x003438    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-             SetTimer1_ms   0x00345c    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-             SetTimer3_ms   0x00349a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-         SimulatedataSend   0x003db8    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
-               TestOutput   0x000306    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-             TrafficLight   0x0006c0    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-   UartDataReceiveProcess   0x00090a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-           UartSendString   0x003cd4    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\uart\uart.c
-               UnlockDoor   0x0005cc    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-       ___return_lbl00000   0x00416c    program     static                          
-       ___return_lbl00000   0x004108    program     static                          
-       ___return_lbl00000   0x0040ce    program     static                          
+                LcdClearS   0x00219c    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+            LcdCreateChar   0x002786    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+            LcdPrintCharS   0x0023e2    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+            LcdPrintLineS   0x0026fa    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+              LcdPrintNum   0x0020da    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+             LcdPrintNumS   0x002456    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+           LcdPrintString   0x002122    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+          LcdPrintStringS   0x0026a4    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+                 LockDoor   0x0005f4    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+                 MainMenu   0x001386    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+       NormalTimeSetting1   0x000a8a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+       NormalTimeSetting2   0x000cc6    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+               OpenOutput   0x000204    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+          Phase1_GreenOff   0x000610    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+           Phase1_GreenOn   0x000602    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+            Phase1_RedOff   0x000648    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+             Phase1_RedOn   0x00063a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+         Phase1_YellowOff   0x00062c    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+          Phase1_YellowOn   0x00061e    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+          Phase2_GreenOff   0x000664    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+           Phase2_GreenOn   0x000656    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+            Phase2_RedOff   0x00069c    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+             Phase2_RedOn   0x00068e    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+         Phase2_YellowOff   0x000680    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+          Phase2_YellowOn   0x000672    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+            ReverseOutput   0x0002a4    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+         RushTimeSetting1   0x000f02    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+         RushTimeSetting2   0x00113e    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+             SetTimer0_ms   0x003e24    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+             SetTimer1_ms   0x003e48    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+             SetTimer3_ms   0x003e86    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+     SetupForFirstProgram   0x0028c0    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+     SetupTimeForRealTime   0x0028b0    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+         SimulatedataSend   0x0047bc    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+               TestOutput   0x000320    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+             TrafficLight   0x0006da    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+   UartDataReceiveProcess   0x0009a6    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+           UartSendString   0x0046d8    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\uart\uart.c
+               UnlockDoor   0x0005e6    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+       ___return_lbl00000   0x004b0c    program     static                          
+       ___return_lbl00000   0x004ad2    program     static                          
        ___return_lbl00000   0x000004    program     static                          
-       ___return_lbl00000   0x0041c4    program     static                          
-       ___return_lbl00000   0x004086    program     static                          
-       ___return_lbl00001   0x0041a8    program     static                          
+       ___return_lbl00000   0x004bc8    program     static                          
+       ___return_lbl00000   0x004b70    program     static                          
+       ___return_lbl00000   0x004a8a    program     static                          
+       ___return_lbl00001   0x004bac    program     static                          
        ___return_lbl00002   0x00001c    program     static                          
-       ___return_lbl00002   0x003f86    program     static                          
+       ___return_lbl00002   0x00498a    program     static                          
        ___return_lbl00003   0x00000c    program     static                          
                __config_0   0x300001    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
                __config_1   0x300002    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
@@ -218,140 +227,150 @@ Linker Map File - Created Wed Jan 26 20:59:27 2022
                __config_8   0x30000b    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
                __config_9   0x30000c    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
                    __init   0x000006    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
-               __string_0   0x003bc1    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
-               __string_0   0x003bad    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-               __string_1   0x003b9c    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-               __string_1   0x003bbe    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
-              __string_10   0x003b12    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-              __string_11   0x003b03    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-              __string_12   0x003af1    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-              __string_13   0x003adf    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-              __string_14   0x003adc    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-              __string_15   0x003acb    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-              __string_16   0x003ab9    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-              __string_17   0x003aa7    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-              __string_18   0x003a96    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-              __string_19   0x003a85    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-               __string_2   0x003b8b    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-              __string_20   0x003a74    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-              __string_21   0x003a63    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-              __string_22   0x003a52    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-              __string_23   0x003a40    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-              __string_24   0x003a2e    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-              __string_25   0x003a1d    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-              __string_26   0x003a0c    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-               __string_3   0x003b89    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-               __string_4   0x003b78    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-               __string_5   0x003b67    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-               __string_6   0x003b56    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-               __string_7   0x003b45    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-               __string_8   0x003b34    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-               __string_9   0x003b23    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-            __zero_memory   0x00416e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                _do_cinit   0x003eea    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+               __string_0   0x0045d4    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+               __string_0   0x0045ad    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+               __string_0   0x004599    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+               __string_1   0x004588    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+               __string_1   0x0045d2    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+               __string_1   0x0045aa    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+              __string_10   0x0044fe    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+              __string_11   0x0044ef    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+              __string_12   0x0044dd    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+              __string_13   0x0044cb    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+              __string_14   0x0044c8    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+              __string_15   0x0044b7    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+              __string_16   0x0044a5    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+              __string_17   0x004493    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+              __string_18   0x004482    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+              __string_19   0x004471    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+               __string_2   0x0045c1    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+               __string_2   0x004577    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+              __string_20   0x004460    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+              __string_21   0x00444f    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+              __string_22   0x00443e    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+              __string_23   0x00442c    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+              __string_24   0x00441a    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+              __string_25   0x004409    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+              __string_26   0x0043f8    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+               __string_3   0x004575    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+               __string_3   0x0045be    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+               __string_4   0x004564    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+               __string_5   0x004553    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+               __string_6   0x004542    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+               __string_7   0x004531    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+               __string_8   0x004520    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+               __string_9   0x00450f    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+            __zero_memory   0x004b72    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                _do_cinit   0x0048ee    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                    _entry   0x000000    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                   _false   0x0040ca    program     static                          
-                   _false   0x004104    program     static                          
-                 _startup   0x00418e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-          button_delay_ms   0x002d5a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
-                compare_l   0x004184    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                copy_loop   0x003f5c    program     static                          
-            copy_one_byte   0x003f62    program     static                          
-                 delay_ms   0x0000f0    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-                     done   0x003f86    program     static                          
-             done_copying   0x003f70    program     static                          
-           ds1307_control   0x003584    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
-           eeprom_control   0x0035a2    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
-                  endloop   0x0041c0    program     static                          
-                  endloop   0x004168    program     static                          
-            get_adc_value   0x003f9a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\adc\adc.c
-                 high_isr   0x003924    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\interrupt\interrupt.c
-                  i2c_ack   0x0035fc    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
-                  i2c_nak   0x003608    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
-                 i2c_read   0x0035f0    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
-                i2c_start   0x0035c0    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
-                 i2c_stop   0x0035ca    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
-                i2c_write   0x0035d4    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
-                 init_adc   0x003f88    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\adc\adc.c
-            init_ext_int0   0x003820    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\interrupt\interrupt.c
-                 init_i2c   0x00356c    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
-           init_interrupt   0x003818    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\interrupt\interrupt.c
-          init_key_matrix   0x002808    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
-init_key_matrix_new_board   0x002fa8    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
-init_key_matrix_with_uart_i2c   0x002810    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
-              init_output   0x000178    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-                 init_pwm   0x00410a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\pwm\pwm.c
-              init_system   0x00017e    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-              init_timer0   0x002fbc    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-              init_timer1   0x003100    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-              init_timer2   0x00324a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-              init_timer3   0x003282    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-                init_uart   0x003bd2    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\uart\uart.c
-   init_user_defined_char   0x0027b8    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-             isButtonBack   0x0006b0    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-         isButtonDecrease   0x0009a2    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-            isButtonEnter   0x0006a0    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-         isButtonIncrease   0x000966    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-             isButtonMode   0x0009de    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-             isButtonNext   0x000690    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-           isButtonNumber   0x00057a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-                lcd_clear   0x001d06    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-                lcd_delay   0x001812    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-                 lcd_init   0x0019b2    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-             lcd_power_of   0x001d1a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-           lcd_print_char   0x001c72    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-          lcd_print_charS   0x0020ae    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-            lcd_print_num   0x001dfc    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-            lcd_print_str   0x001c8c    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-              lcd_putchar   0x001c58    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-          lcd_read_status   0x001ac2    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-          lcd_sendCommand   0x001932    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-           lcd_set_cursor   0x001ccc    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-            lcd_wait_busy   0x001b78    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-          lcd_write_4bits   0x001b98    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-            lcd_write_cmd   0x001bde    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-           lcd_write_data   0x001c1a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-                     loop   0x0041b2    program     static                          
-                     loop   0x00419e    program     static                          
-                     loop   0x004096    program     static                          
-                     loop   0x0040dc    program     static                          
-                     loop   0x00414c    program     static                          
-                   loop_h   0x00417c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                   loop_l   0x004186    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                  low_isr   0x003828    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\interrupt\interrupt.c
-                     main   0x000080    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-              read_ds1307   0x00370c    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
-              read_eeprom   0x003782    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
-            reset_package   0x000958    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-          scan_key_matrix   0x002820    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
-   scan_key_matrix_1_line   0x002ade    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
-     scan_key_matrix_demo   0x002de2    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
-scan_key_matrix_new_board   0x002f08    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
-scan_key_matrix_with_uart   0x00297e    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
-scan_key_matrix_with_uart_i2c   0x002c12    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
-             set_DC_speed   0x00412c    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\pwm\pwm.c
-             start_timer0   0x003074    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-             start_timer1   0x0031ba    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-             start_timer2   0x003276    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-             start_timer3   0x003338    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-              stop_timer0   0x003070    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-              stop_timer1   0x003246    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-              stop_timer2   0x00327e    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-              stop_timer3   0x0033c4    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-                     test   0x003f04    program     static                          
-               timer0_isr   0x0033c8    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-               timer1_isr   0x0033e4    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-               timer2_isr   0x003400    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-               timer3_isr   0x00341c    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-            uart_delay_ms   0x003bf0    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\uart\uart.c
-                 uart_isr   0x003d20    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\uart\uart.c
-uart_isr_simulate_machine   0x003d24    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
-             uart_putchar   0x003c78    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\uart\uart.c
-            uart_send_str   0x003c94    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\uart\uart.c
-                 v_timer0   0x0018a2    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-             write_ds1307   0x003614    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
-             write_eeprom   0x00367e    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
-               zero_block   0x00417c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   _false   0x004ace    program     static                          
+                   _false   0x004b08    program     static                          
+                 _startup   0x004b92    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+          button_delay_ms   0x003746    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
+                clock_run   0x0028c4    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+                compare_l   0x004b88    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                copy_loop   0x004960    program     static                          
+            copy_one_byte   0x004966    program     static                          
+                 delay_ms   0x00010e    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+                     done   0x00498a    program     static                          
+             done_copying   0x004974    program     static                          
+           ds1307_control   0x003f70    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
+           eeprom_control   0x003f8e    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
+                  endloop   0x004bc4    program     static                          
+                  endloop   0x004b6c    program     static                          
+            get_adc_value   0x00499e    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\adc\adc.c
+                 high_isr   0x004310    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\interrupt\interrupt.c
+                  i2c_ack   0x003fe8    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
+                  i2c_nak   0x003ff4    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
+                 i2c_read   0x003fdc    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
+                i2c_start   0x003fac    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
+                 i2c_stop   0x003fb6    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
+                i2c_write   0x003fc0    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
+                 init_adc   0x00498c    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\adc\adc.c
+            init_ext_int0   0x00420c    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\interrupt\interrupt.c
+                 init_i2c   0x003f58    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
+           init_interrupt   0x004204    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\interrupt\interrupt.c
+          init_key_matrix   0x0031f4    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
+init_key_matrix_new_board   0x003994    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
+init_key_matrix_with_uart_i2c   0x0031fc    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
+              init_output   0x000196    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+                 init_pwm   0x004b0e    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\pwm\pwm.c
+              init_system   0x00019c    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+              init_timer0   0x0039a8    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+              init_timer1   0x003aec    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+              init_timer2   0x003c36    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+              init_timer3   0x003c6e    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+                init_uart   0x0045d6    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\uart\uart.c
+   init_user_defined_char   0x002860    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+             isButtonBack   0x0006ca    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+         isButtonDecrease   0x000a3e    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+        isButtonDecrease1   0x0031a8    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+            isButtonEnter   0x0006ba    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+         isButtonIncrease   0x000a02    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+        isButtonIncrease1   0x00316c    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+             isButtonMode   0x000a7a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+            isButtonMode1   0x0031e4    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+             isButtonNext   0x0006aa    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+           isButtonNumber   0x000594    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+                lcd_clear   0x001dae    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+                lcd_delay   0x0018ba    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+                 lcd_init   0x001a5a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+             lcd_power_of   0x001dc2    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+           lcd_print_char   0x001d1a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+          lcd_print_charS   0x002156    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+            lcd_print_num   0x001ea4    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+            lcd_print_str   0x001d34    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+              lcd_putchar   0x001d00    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+          lcd_read_status   0x001b6a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+          lcd_sendCommand   0x0019da    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+           lcd_set_cursor   0x001d74    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+            lcd_wait_busy   0x001c20    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+          lcd_write_4bits   0x001c40    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+            lcd_write_cmd   0x001c86    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+           lcd_write_data   0x001cc2    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+                     loop   0x004bb6    program     static                          
+                     loop   0x004b50    program     static                          
+                     loop   0x004ae0    program     static                          
+                     loop   0x004ba2    program     static                          
+                     loop   0x004a9a    program     static                          
+                   loop_h   0x004b80    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   loop_l   0x004b8a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  low_isr   0x004214    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\interrupt\interrupt.c
+                     main   0x00008c    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+              read_ds1307   0x0040f8    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
+              read_eeprom   0x00416e    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
+            reset_package   0x0009f4    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+          scan_key_matrix   0x00320c    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
+   scan_key_matrix_1_line   0x0034ca    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
+     scan_key_matrix_demo   0x0037ce    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
+scan_key_matrix_new_board   0x0038f4    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
+scan_key_matrix_with_uart   0x00336a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
+scan_key_matrix_with_uart_i2c   0x0035fe    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
+             set_DC_speed   0x004b30    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\pwm\pwm.c
+                smolClock   0x002c3c    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+            smolLateClock   0x002ee0    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+             start_timer0   0x003a60    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+             start_timer1   0x003ba6    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+             start_timer2   0x003c62    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+             start_timer3   0x003d24    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+              stop_timer0   0x003a5c    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+              stop_timer1   0x003c32    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+              stop_timer2   0x003c6a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+              stop_timer3   0x003db0    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+                     test   0x004908    program     static                          
+               timer0_isr   0x003db4    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+               timer1_isr   0x003dd0    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+               timer2_isr   0x003dec    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+               timer3_isr   0x003e08    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+            uart_delay_ms   0x0045f4    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\uart\uart.c
+                 uart_isr   0x004724    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\uart\uart.c
+uart_isr_simulate_machine   0x004728    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+             uart_putchar   0x00467c    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\uart\uart.c
+            uart_send_str   0x004698    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\uart\uart.c
+                 v_timer0   0x00194a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+             write_ds1307   0x004000    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
+             write_eeprom   0x00406a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
+               zero_block   0x004b80    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    ADCON0   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                ADCON0bits   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    ADCON1   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
@@ -378,7 +397,7 @@ uart_isr_simulate_machine   0x003d24    program     extern D:\GitHub\Traffic-Lig
                    CCPR2L   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     CMCON   0x000fb4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                 CMCONbits   0x000fb4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                COD_value   0x0001ae       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+                COD_value   0x0001af       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
                    CVRCON   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                CVRCONbits   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      DDRA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
@@ -399,7 +418,7 @@ uart_isr_simulate_machine   0x003d24    program     extern D:\GitHub\Traffic-Lig
                EECON1bits   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    EECON2   0x000fa7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    EEDATA   0x000fa8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-               FLOW_value   0x0001ad       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+               FLOW_value   0x0001ae       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
                      FSR0   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     FSR0H   0x000fea       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     FSR0L   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
@@ -437,8 +456,9 @@ uart_isr_simulate_machine   0x003d24    program     extern D:\GitHub\Traffic-Lig
                    LVDCON   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                LVDCONbits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                 LcdScreen   0x000f41       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-                NH4_value   0x0001b1       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
-                NO3_value   0x0001b0       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+                     MODE   0x000157       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+                NH4_value   0x0001b2       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+                NO3_value   0x0001b1       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
                    OSCCON   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                OSCCONbits   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                   OSCTUNE   0x000f9b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
@@ -516,7 +536,7 @@ uart_isr_simulate_machine   0x003d24    program     extern D:\GitHub\Traffic-Lig
                   TBLPTRH   0x000ff7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                   TBLPTRL   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                   TBLPTRU   0x000ff8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-               TEMP_value   0x0001ab       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+               TEMP_value   0x0001ac       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
                     TMR0H   0x000fd7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     TMR0L   0x000fd6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     TMR1H   0x000fcf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
@@ -538,7 +558,7 @@ uart_isr_simulate_machine   0x003d24    program     extern D:\GitHub\Traffic-Lig
                 TRISDbits   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     TRISE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                 TRISEbits   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                TSS_value   0x0001af       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+                TSS_value   0x0001b0       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
                     TXREG   0x000fad       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     TXSTA   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                 TXSTAbits   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
@@ -547,7 +567,7 @@ uart_isr_simulate_machine   0x003d24    program     extern D:\GitHub\Traffic-Lig
                    WDTCON   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                WDTCONbits   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      WREG   0x000fe8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-             WaitResponse   0x0001a2       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+             WaitResponse   0x0001a3       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
                  __AARGB0   0x000009       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                  __AARGB1   0x000008       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                  __AARGB2   0x000007       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
@@ -568,66 +588,74 @@ uart_isr_simulate_machine   0x003d24    program     extern D:\GitHub\Traffic-Lig
                   __REMB1   0x000004       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                   __REMB2   0x000003       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                   __REMB3   0x000002       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                  __tmp_0   0x000010       data     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-                  __tmp_0   0x000010       data     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-                  __tmp_0   0x000010       data     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
-                  __tmp_0   0x000010       data     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\adc\adc.c
-                  __tmp_0   0x000010       data     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
                   __tmp_0   0x000010       data     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-                  __tmp_0   0x000010       data     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\uart\uart.c
+                  __tmp_0   0x000010       data     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\adc\adc.c
+                  __tmp_0   0x000010       data     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
+                  __tmp_0   0x000010       data     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
                   __tmp_0   0x000010       data     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
-                  ack_bit   0x0001c9       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
+                  __tmp_0   0x000010       data     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\uart\uart.c
+                  __tmp_0   0x000010       data     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+                  __tmp_0   0x000010       data     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+                  __tmp_0   0x000010       data     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+                  ack_bit   0x0001d6       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
                  ack_flag   0x0000fd       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
                 adc_value   0x000f61       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\adc\adc.c
          arrayMapOfNumber   0x000110       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
          arrayMapOfOutput   0x000100       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
        arrayMapOfPassword   0x000120       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-      arrayMaskInputOfKey   0x00017d       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
-     arrayMaskOutputOfKey   0x000179       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
-            arrayPassword   0x0001be       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+      arrayMaskInputOfKey   0x00017e       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
+     arrayMaskOutputOfKey   0x00017a       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
+            arrayPassword   0x0001cb       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+                    blink   0x0001bf       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
                  blinking   0x000148       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
                  byte_num   0x0000e6       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
-                     cnt0   0x0001c5       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\interrupt\interrupt.c
-                     cnt1   0x0001c7       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\interrupt\interrupt.c
-               cntOfLight   0x000158       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-                curr_byte   0x0001b7       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-               curr_entry   0x0001b9       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+               clockState   0x0001b5       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+                     cnt0   0x0001d2       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\interrupt\interrupt.c
+                     cnt1   0x0001d4       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\interrupt\interrupt.c
+               cntOfLight   0x000159       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+                curr_byte   0x0001c4       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+               curr_entry   0x0001c6       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
               current_col   0x000f7d       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
               current_row   0x000f7b       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
               dataReceive   0x000081       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
                  dataSend   0x0000b3       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
-                 data_ptr   0x0001bb       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                 data_ptr   0x0001c8       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
              display_menu   0x00013c       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
              display_page   0x00013b       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-               duty_cycle   0x0001ca       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\pwm\pwm.c
-flagOfDataReceiveComplete   0x0001a4       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+               duty_cycle   0x0001d7       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\pwm\pwm.c
+flagOfDataReceiveComplete   0x0001a5       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
                 flag_read   0x0000e5       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
-              flag_timer0   0x000189       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-              flag_timer1   0x00018a       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-              flag_timer2   0x00018b       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-              flag_timer3   0x00018c       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+              flag_timer0   0x00018a       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+              flag_timer1   0x00018b       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+              flag_timer2   0x00018c       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+              flag_timer3   0x00018d       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+                     hour   0x0001b8       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
                         i   0x000080       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
                  i2c_data   0x0000ff       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
-       indexOfDataReceive   0x0001a6       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
-           indexOfMachine   0x0001a5       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+       indexOfDataReceive   0x0001a7       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+           indexOfMachine   0x0001a6       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
             indexOfNumber   0x000135       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-          indexOfdataSend   0x0001a7       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+          indexOfdataSend   0x0001a8       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
                 index_add   0x0000e7       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
-                        k   0x0001c4       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-                 key_code   0x000159       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
+                        k   0x0001d1       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+                 key_code   0x00015a       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
+                late_hour   0x0001bc       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+              late_minute   0x0001bd       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+              late_second   0x0001be       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
                      menu   0x000139       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
                 menu_page   0x000138       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+                   minute   0x0001b7       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
       normalOfGreenPhase1   0x00014f       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
       normalOfGreenPhase2   0x000151       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
      normalOfYellowPhase1   0x000150       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
      normalOfYellowPhase2   0x000152       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
       normal_setting_menu   0x000143       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-      numberOfDataReceive   0x0001a8       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
-         numberOfDataSend   0x0001a9       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
-              numberValue   0x0001c2       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+      numberOfDataReceive   0x0001a9       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+         numberOfDataSend   0x0001aa       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+              numberValue   0x0001cf       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
                    option   0x000137       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-                 pH_value   0x0001ac       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
-                     prom   0x0001b4       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                 pH_value   0x0001ad       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+                     prom   0x0001c1       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                 read_data   0x0000f3       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
              receive_data   0x0000fe       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
              receive_flag   0x0000fc       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
@@ -636,6 +664,7 @@ flagOfDataReceiveComplete   0x0001a4       data     extern D:\GitHub\Traffic-Lig
        rushOfYellowPhase1   0x000154       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
        rushOfYellowPhase2   0x000156       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
         rush_setting_menu   0x000145       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+                   second   0x0001b6       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
              setting_menu   0x000140       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
         setting_menu_page   0x00013f       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
              setting_page   0x000142       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
@@ -644,32 +673,35 @@ flagOfDataReceiveComplete   0x0001a4       data     extern D:\GitHub\Traffic-Lig
             statusOfLight   0x00014a       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
              statusOutput   0x000108       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
            statusPassword   0x000134       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-            statusReceive   0x0001a3       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
-             statusSim900   0x0001a1       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
-                tempCount   0x0001aa       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
-                time0_MUL   0x000199       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-                time1_MUL   0x00019b       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-                time2_MUL   0x00019d       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-                time3_MUL   0x00019f       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-       timeChangedataSend   0x0001b2       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+            statusReceive   0x0001a4       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+             statusSim900   0x0001a2       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+                tempCount   0x0001ab       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+                temp_hour   0x0001b9       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+              temp_minute   0x0001ba       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+              temp_second   0x0001bb       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+                time0_MUL   0x00019a       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+                time1_MUL   0x00019c       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+                time2_MUL   0x00019e       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+                time3_MUL   0x0001a0       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+       timeChangedataSend   0x0001b3       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
                 timeDelay   0x000136       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
         timeOfGreenPhase1   0x00014b       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
         timeOfGreenPhase2   0x00014d       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-              timeOfLight   0x000157       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+              timeOfLight   0x000158       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
        timeOfYellowPhase1   0x00014c       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
        timeOfYellowPhase2   0x00014e       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
                 timeState   0x000147       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-               timer0_cnt   0x000191       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-             timer0_value   0x000181       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-               timer1_cnt   0x000193       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-             timer1_value   0x000183       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-               timer2_cnt   0x000195       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-             timer2_value   0x000185       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-               timer3_cnt   0x000197       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-             timer3_value   0x000187       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-                       tp   0x0001c3       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-                   v_cnt0   0x00018d       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-                   v_cnt1   0x00018f       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+               timer0_cnt   0x000192       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+             timer0_value   0x000182       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+               timer1_cnt   0x000194       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+             timer1_value   0x000184       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+               timer2_cnt   0x000196       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+             timer2_value   0x000186       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+               timer3_cnt   0x000198       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+             timer3_value   0x000188       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+                       tp   0x0001d0       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+                   v_cnt0   0x00018e       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+                   v_cnt1   0x000190       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
                write_data   0x0000e8       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
 
 
@@ -684,209 +716,223 @@ flagOfDataReceiveComplete   0x0001a4       data     extern D:\GitHub\Traffic-Lig
        ___return_lbl00003   0x00000c    program     static                          
        InterruptVectorLow   0x000018    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\interrupt\interrupt.c
        ___return_lbl00002   0x00001c    program     static                          
-                     main   0x000080    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-                 delay_ms   0x0000f0    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-              init_output   0x000178    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-              init_system   0x00017e    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-               OpenOutput   0x0001ea    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-              CloseOutput   0x00023a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-            ReverseOutput   0x00028a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-               TestOutput   0x000306    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-         App_PasswordDoor   0x000384    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-            CheckPassword   0x0004ba    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-           isButtonNumber   0x00057a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-               UnlockDoor   0x0005cc    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-                 LockDoor   0x0005da    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-           Phase1_GreenOn   0x0005e8    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-          Phase1_GreenOff   0x0005f6    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-          Phase1_YellowOn   0x000604    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-         Phase1_YellowOff   0x000612    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-             Phase1_RedOn   0x000620    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-            Phase1_RedOff   0x00062e    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-           Phase2_GreenOn   0x00063c    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-          Phase2_GreenOff   0x00064a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-          Phase2_YellowOn   0x000658    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-         Phase2_YellowOff   0x000666    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-             Phase2_RedOn   0x000674    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-            Phase2_RedOff   0x000682    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-             isButtonNext   0x000690    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-            isButtonEnter   0x0006a0    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-             isButtonBack   0x0006b0    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-             TrafficLight   0x0006c0    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-   UartDataReceiveProcess   0x00090a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-            reset_package   0x000958    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-         isButtonIncrease   0x000966    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-         isButtonDecrease   0x0009a2    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-             isButtonMode   0x0009de    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-       NormalTimeSetting1   0x0009ee    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-       NormalTimeSetting2   0x000c2a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-         RushTimeSetting1   0x000e66    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-         RushTimeSetting2   0x0010a2    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-                 MainMenu   0x0012ea    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-                lcd_delay   0x001812    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-                 v_timer0   0x0018a2    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-          lcd_sendCommand   0x001932    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-                 lcd_init   0x0019b2    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-          lcd_read_status   0x001ac2    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-            lcd_wait_busy   0x001b78    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-          lcd_write_4bits   0x001b98    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-            lcd_write_cmd   0x001bde    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-           lcd_write_data   0x001c1a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-              lcd_putchar   0x001c58    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-           lcd_print_char   0x001c72    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-            lcd_print_str   0x001c8c    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-           lcd_set_cursor   0x001ccc    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-                lcd_clear   0x001d06    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-             lcd_power_of   0x001d1a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-            lcd_print_num   0x001dfc    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-              LcdPrintNum   0x002032    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-           LcdPrintString   0x00207a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-          lcd_print_charS   0x0020ae    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-                LcdClearS   0x0020f4    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-         DisplayLcdScreen   0x002152    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-        DisplayLcdScreen2   0x00224a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-      DisplayLcdScreenOld   0x0022d0    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-            LcdPrintCharS   0x00233a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-             LcdPrintNumS   0x0023ae    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-          LcdPrintStringS   0x0025fc    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-            LcdPrintLineS   0x002652    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-            LcdCreateChar   0x0026de    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-   init_user_defined_char   0x0027b8    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
-          init_key_matrix   0x002808    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
-init_key_matrix_with_uart_i2c   0x002810    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
-          scan_key_matrix   0x002820    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
-scan_key_matrix_with_uart   0x00297e    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
-   scan_key_matrix_1_line   0x002ade    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
-scan_key_matrix_with_uart_i2c   0x002c12    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
-          button_delay_ms   0x002d5a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
-     scan_key_matrix_demo   0x002de2    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
-scan_key_matrix_new_board   0x002f08    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
-init_key_matrix_new_board   0x002fa8    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
-              init_timer0   0x002fbc    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-              stop_timer0   0x003070    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-             start_timer0   0x003074    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-              init_timer1   0x003100    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-             start_timer1   0x0031ba    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-              stop_timer1   0x003246    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-              init_timer2   0x00324a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-             start_timer2   0x003276    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-              stop_timer2   0x00327e    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-              init_timer3   0x003282    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-             start_timer3   0x003338    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-              stop_timer3   0x0033c4    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-               timer0_isr   0x0033c8    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-               timer1_isr   0x0033e4    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-               timer2_isr   0x003400    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-               timer3_isr   0x00341c    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-             SetTimer0_ms   0x003438    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-             SetTimer1_ms   0x00345c    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-             SetTimer3_ms   0x00349a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-                  BCD2Dec   0x0034d8    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
-                  Dec2BCD   0x003516    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
-                 init_i2c   0x00356c    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
-           ds1307_control   0x003584    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
-           eeprom_control   0x0035a2    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
-                i2c_start   0x0035c0    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
-                 i2c_stop   0x0035ca    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
-                i2c_write   0x0035d4    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
-                 i2c_read   0x0035f0    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
-                  i2c_ack   0x0035fc    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
-                  i2c_nak   0x003608    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
-             write_ds1307   0x003614    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
-             write_eeprom   0x00367e    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
-              read_ds1307   0x00370c    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
-              read_eeprom   0x003782    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
-           init_interrupt   0x003818    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\interrupt\interrupt.c
-            init_ext_int0   0x003820    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\interrupt\interrupt.c
-                  low_isr   0x003828    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\interrupt\interrupt.c
-                 high_isr   0x003924    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\interrupt\interrupt.c
-              __string_26   0x003a0c    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-              __string_25   0x003a1d    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-              __string_24   0x003a2e    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-              __string_23   0x003a40    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-              __string_22   0x003a52    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-              __string_21   0x003a63    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-              __string_20   0x003a74    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-              __string_19   0x003a85    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-              __string_18   0x003a96    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-              __string_17   0x003aa7    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-              __string_16   0x003ab9    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-              __string_15   0x003acb    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-              __string_14   0x003adc    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-              __string_13   0x003adf    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-              __string_12   0x003af1    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-              __string_11   0x003b03    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-              __string_10   0x003b12    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-               __string_9   0x003b23    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-               __string_8   0x003b34    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-               __string_7   0x003b45    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-               __string_6   0x003b56    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-               __string_5   0x003b67    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-               __string_4   0x003b78    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-               __string_3   0x003b89    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-               __string_2   0x003b8b    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-               __string_1   0x003b9c    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-               __string_0   0x003bad    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-               __string_1   0x003bbe    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
-               __string_0   0x003bc1    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
-                init_uart   0x003bd2    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\uart\uart.c
-            uart_delay_ms   0x003bf0    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\uart\uart.c
-             uart_putchar   0x003c78    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\uart\uart.c
-            uart_send_str   0x003c94    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\uart\uart.c
-           UartSendString   0x003cd4    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\uart\uart.c
-                 uart_isr   0x003d20    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\uart\uart.c
-uart_isr_simulate_machine   0x003d24    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
-         SimulatedataSend   0x003db8    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
-       DisplayDataReceive   0x003dba    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
-                 FXD1616S   0x003e44    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                  DA1616S   0x003e56    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                   D1616S   0x003e66    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                 D1616SOK   0x003e70    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                D1616SNEG   0x003e74    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                  D1616SX   0x003e86    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                 FXD2424S   0x003e90    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                  DA2424S   0x003ea6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                   D2424S   0x003eba    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                 D2424SOK   0x003ec4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                D2424SNEG   0x003ec8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                  D2424SX   0x003ee0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
-                _do_cinit   0x003eea    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     test   0x003f04    program     static                          
-                copy_loop   0x003f5c    program     static                          
-            copy_one_byte   0x003f62    program     static                          
-             done_copying   0x003f70    program     static                          
-                     done   0x003f86    program     static                          
-       ___return_lbl00002   0x003f86    program     static                          
-                 init_adc   0x003f88    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\adc\adc.c
-            get_adc_value   0x003f9a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\adc\adc.c
-                  FXM3232   0x004018    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm3232.c
-       ___return_lbl00000   0x004086    program     static                          
-                 FXD3232U   0x004088    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
-                     loop   0x004096    program     static                          
-                   _false   0x0040ca    program     static                          
-       ___return_lbl00000   0x0040ce    program     static                          
-                 FXD2424U   0x0040d0    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424u.c
-                     loop   0x0040dc    program     static                          
-                   _false   0x004104    program     static                          
-       ___return_lbl00000   0x004108    program     static                          
-                 init_pwm   0x00410a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\pwm\pwm.c
-             set_DC_speed   0x00412c    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\pwm\pwm.c
-                 FXD1616U   0x004142    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
-                     loop   0x00414c    program     static                          
-                  endloop   0x004168    program     static                          
-       ___return_lbl00000   0x00416c    program     static                          
-            __zero_memory   0x00416e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                   loop_h   0x00417c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-               zero_block   0x00417c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                compare_l   0x004184    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                   loop_l   0x004186    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                 _startup   0x00418e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     loop   0x00419e    program     static                          
-       ___return_lbl00001   0x0041a8    program     static                          
-                 FXD0808U   0x0041aa    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd0808u.c
-                     loop   0x0041b2    program     static                          
-                  endloop   0x0041c0    program     static                          
-       ___return_lbl00000   0x0041c4    program     static                          
+                     main   0x00008c    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+                 delay_ms   0x00010e    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+              init_output   0x000196    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+              init_system   0x00019c    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+               OpenOutput   0x000204    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+              CloseOutput   0x000254    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+            ReverseOutput   0x0002a4    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+               TestOutput   0x000320    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+         App_PasswordDoor   0x00039e    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+            CheckPassword   0x0004d4    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+           isButtonNumber   0x000594    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+               UnlockDoor   0x0005e6    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+                 LockDoor   0x0005f4    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+           Phase1_GreenOn   0x000602    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+          Phase1_GreenOff   0x000610    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+          Phase1_YellowOn   0x00061e    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+         Phase1_YellowOff   0x00062c    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+             Phase1_RedOn   0x00063a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+            Phase1_RedOff   0x000648    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+           Phase2_GreenOn   0x000656    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+          Phase2_GreenOff   0x000664    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+          Phase2_YellowOn   0x000672    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+         Phase2_YellowOff   0x000680    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+             Phase2_RedOn   0x00068e    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+            Phase2_RedOff   0x00069c    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+             isButtonNext   0x0006aa    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+            isButtonEnter   0x0006ba    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+             isButtonBack   0x0006ca    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+             TrafficLight   0x0006da    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+   UartDataReceiveProcess   0x0009a6    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+            reset_package   0x0009f4    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+         isButtonIncrease   0x000a02    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+         isButtonDecrease   0x000a3e    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+             isButtonMode   0x000a7a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+       NormalTimeSetting1   0x000a8a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+       NormalTimeSetting2   0x000cc6    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+         RushTimeSetting1   0x000f02    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+         RushTimeSetting2   0x00113e    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+                 MainMenu   0x001386    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+                lcd_delay   0x0018ba    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+                 v_timer0   0x00194a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+          lcd_sendCommand   0x0019da    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+                 lcd_init   0x001a5a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+          lcd_read_status   0x001b6a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+            lcd_wait_busy   0x001c20    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+          lcd_write_4bits   0x001c40    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+            lcd_write_cmd   0x001c86    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+           lcd_write_data   0x001cc2    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+              lcd_putchar   0x001d00    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+           lcd_print_char   0x001d1a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+            lcd_print_str   0x001d34    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+           lcd_set_cursor   0x001d74    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+                lcd_clear   0x001dae    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+             lcd_power_of   0x001dc2    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+            lcd_print_num   0x001ea4    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+              LcdPrintNum   0x0020da    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+           LcdPrintString   0x002122    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+          lcd_print_charS   0x002156    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+                LcdClearS   0x00219c    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+         DisplayLcdScreen   0x0021fa    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+        DisplayLcdScreen2   0x0022f2    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+      DisplayLcdScreenOld   0x002378    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+            LcdPrintCharS   0x0023e2    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+             LcdPrintNumS   0x002456    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+          LcdPrintStringS   0x0026a4    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+            LcdPrintLineS   0x0026fa    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+            LcdCreateChar   0x002786    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+   init_user_defined_char   0x002860    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+     SetupTimeForRealTime   0x0028b0    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+     SetupForFirstProgram   0x0028c0    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+                clock_run   0x0028c4    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+          DisplayRealTime   0x002916    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+          DisplayTempTime   0x002a90    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+                smolClock   0x002c3c    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+            smolLateClock   0x002ee0    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+        isButtonIncrease1   0x00316c    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+        isButtonDecrease1   0x0031a8    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+            isButtonMode1   0x0031e4    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+          init_key_matrix   0x0031f4    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
+init_key_matrix_with_uart_i2c   0x0031fc    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
+          scan_key_matrix   0x00320c    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
+scan_key_matrix_with_uart   0x00336a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
+   scan_key_matrix_1_line   0x0034ca    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
+scan_key_matrix_with_uart_i2c   0x0035fe    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
+          button_delay_ms   0x003746    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
+     scan_key_matrix_demo   0x0037ce    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
+scan_key_matrix_new_board   0x0038f4    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
+init_key_matrix_new_board   0x003994    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
+              init_timer0   0x0039a8    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+              stop_timer0   0x003a5c    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+             start_timer0   0x003a60    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+              init_timer1   0x003aec    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+             start_timer1   0x003ba6    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+              stop_timer1   0x003c32    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+              init_timer2   0x003c36    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+             start_timer2   0x003c62    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+              stop_timer2   0x003c6a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+              init_timer3   0x003c6e    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+             start_timer3   0x003d24    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+              stop_timer3   0x003db0    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+               timer0_isr   0x003db4    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+               timer1_isr   0x003dd0    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+               timer2_isr   0x003dec    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+               timer3_isr   0x003e08    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+             SetTimer0_ms   0x003e24    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+             SetTimer1_ms   0x003e48    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+             SetTimer3_ms   0x003e86    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+                  BCD2Dec   0x003ec4    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
+                  Dec2BCD   0x003f02    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
+                 init_i2c   0x003f58    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
+           ds1307_control   0x003f70    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
+           eeprom_control   0x003f8e    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
+                i2c_start   0x003fac    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
+                 i2c_stop   0x003fb6    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
+                i2c_write   0x003fc0    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
+                 i2c_read   0x003fdc    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
+                  i2c_ack   0x003fe8    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
+                  i2c_nak   0x003ff4    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
+             write_ds1307   0x004000    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
+             write_eeprom   0x00406a    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
+              read_ds1307   0x0040f8    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
+              read_eeprom   0x00416e    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
+           init_interrupt   0x004204    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\interrupt\interrupt.c
+            init_ext_int0   0x00420c    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\interrupt\interrupt.c
+                  low_isr   0x004214    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\interrupt\interrupt.c
+                 high_isr   0x004310    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\interrupt\interrupt.c
+              __string_26   0x0043f8    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+              __string_25   0x004409    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+              __string_24   0x00441a    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+              __string_23   0x00442c    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+              __string_22   0x00443e    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+              __string_21   0x00444f    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+              __string_20   0x004460    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+              __string_19   0x004471    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+              __string_18   0x004482    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+              __string_17   0x004493    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+              __string_16   0x0044a5    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+              __string_15   0x0044b7    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+              __string_14   0x0044c8    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+              __string_13   0x0044cb    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+              __string_12   0x0044dd    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+              __string_11   0x0044ef    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+              __string_10   0x0044fe    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+               __string_9   0x00450f    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+               __string_8   0x004520    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+               __string_7   0x004531    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+               __string_6   0x004542    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+               __string_5   0x004553    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+               __string_4   0x004564    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+               __string_3   0x004575    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+               __string_2   0x004577    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+               __string_1   0x004588    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+               __string_0   0x004599    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+               __string_1   0x0045aa    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+               __string_0   0x0045ad    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+               __string_3   0x0045be    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+               __string_2   0x0045c1    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+               __string_1   0x0045d2    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+               __string_0   0x0045d4    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+                init_uart   0x0045d6    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\uart\uart.c
+            uart_delay_ms   0x0045f4    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\uart\uart.c
+             uart_putchar   0x00467c    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\uart\uart.c
+            uart_send_str   0x004698    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\uart\uart.c
+           UartSendString   0x0046d8    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\uart\uart.c
+                 uart_isr   0x004724    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\uart\uart.c
+uart_isr_simulate_machine   0x004728    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+         SimulatedataSend   0x0047bc    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+       DisplayDataReceive   0x0047be    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+                 FXD1616S   0x004848    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                  DA1616S   0x00485a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                   D1616S   0x00486a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                 D1616SOK   0x004874    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                D1616SNEG   0x004878    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                  D1616SX   0x00488a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                 FXD2424S   0x004894    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                  DA2424S   0x0048aa    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                   D2424S   0x0048be    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                 D2424SOK   0x0048c8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                D2424SNEG   0x0048cc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                  D2424SX   0x0048e4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424s.asm
+                _do_cinit   0x0048ee    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     test   0x004908    program     static                          
+                copy_loop   0x004960    program     static                          
+            copy_one_byte   0x004966    program     static                          
+             done_copying   0x004974    program     static                          
+                     done   0x00498a    program     static                          
+       ___return_lbl00002   0x00498a    program     static                          
+                 init_adc   0x00498c    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\adc\adc.c
+            get_adc_value   0x00499e    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\adc\adc.c
+                  FXM3232   0x004a1c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm3232.c
+       ___return_lbl00000   0x004a8a    program     static                          
+                 FXD3232U   0x004a8c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
+                     loop   0x004a9a    program     static                          
+                   _false   0x004ace    program     static                          
+       ___return_lbl00000   0x004ad2    program     static                          
+                 FXD2424U   0x004ad4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd2424u.c
+                     loop   0x004ae0    program     static                          
+                   _false   0x004b08    program     static                          
+       ___return_lbl00000   0x004b0c    program     static                          
+                 init_pwm   0x004b0e    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\pwm\pwm.c
+             set_DC_speed   0x004b30    program     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\pwm\pwm.c
+                 FXD1616U   0x004b46    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
+                     loop   0x004b50    program     static                          
+                  endloop   0x004b6c    program     static                          
+       ___return_lbl00000   0x004b70    program     static                          
+            __zero_memory   0x004b72    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+               zero_block   0x004b80    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   loop_h   0x004b80    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                compare_l   0x004b88    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   loop_l   0x004b8a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 _startup   0x004b92    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     loop   0x004ba2    program     static                          
+       ___return_lbl00001   0x004bac    program     static                          
+                 FXD0808U   0x004bae    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd0808u.c
+                     loop   0x004bb6    program     static                          
+                  endloop   0x004bc4    program     static                          
+       ___return_lbl00000   0x004bc8    program     static                          
                __config_0   0x300001    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
                __config_1   0x300002    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
                __config_2   0x300003    program     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
@@ -919,14 +965,15 @@ uart_isr_simulate_machine   0x003d24    program     extern D:\GitHub\Traffic-Lig
                  __BARGB1   0x00000d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
                  __BARGB0   0x00000e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
                    __BEXP   0x00000f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                  __tmp_0   0x000010       data     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+                  __tmp_0   0x000010       data     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
+                  __tmp_0   0x000010       data     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+                  __tmp_0   0x000010       data     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\adc\adc.c
+                  __tmp_0   0x000010       data     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
+                  __tmp_0   0x000010       data     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
                   __tmp_0   0x000010       data     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
                   __tmp_0   0x000010       data     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\uart\uart.c
-                  __tmp_0   0x000010       data     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-                  __tmp_0   0x000010       data     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
-                  __tmp_0   0x000010       data     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\adc\adc.c
-                  __tmp_0   0x000010       data     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
                   __tmp_0   0x000010       data     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-                  __tmp_0   0x000010       data     static D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
                         i   0x000080       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
               dataReceive   0x000081       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
                  dataSend   0x0000b3       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
@@ -971,59 +1018,71 @@ uart_isr_simulate_machine   0x003d24    program     extern D:\GitHub\Traffic-Lig
        rushOfYellowPhase1   0x000154       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
         rushOfGreenPhase2   0x000155       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
        rushOfYellowPhase2   0x000156       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-              timeOfLight   0x000157       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-               cntOfLight   0x000158       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-                 key_code   0x000159       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
-     arrayMaskOutputOfKey   0x000179       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
-      arrayMaskInputOfKey   0x00017d       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
-             timer0_value   0x000181       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-             timer1_value   0x000183       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-             timer2_value   0x000185       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-             timer3_value   0x000187       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-              flag_timer0   0x000189       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-              flag_timer1   0x00018a       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-              flag_timer2   0x00018b       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-              flag_timer3   0x00018c       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-                   v_cnt0   0x00018d       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-                   v_cnt1   0x00018f       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-               timer0_cnt   0x000191       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-               timer1_cnt   0x000193       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-               timer2_cnt   0x000195       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-               timer3_cnt   0x000197       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-                time0_MUL   0x000199       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-                time1_MUL   0x00019b       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-                time2_MUL   0x00019d       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-                time3_MUL   0x00019f       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
-             statusSim900   0x0001a1       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
-             WaitResponse   0x0001a2       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
-            statusReceive   0x0001a3       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
-flagOfDataReceiveComplete   0x0001a4       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
-           indexOfMachine   0x0001a5       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
-       indexOfDataReceive   0x0001a6       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
-          indexOfdataSend   0x0001a7       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
-      numberOfDataReceive   0x0001a8       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
-         numberOfDataSend   0x0001a9       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
-                tempCount   0x0001aa       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
-               TEMP_value   0x0001ab       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
-                 pH_value   0x0001ac       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
-               FLOW_value   0x0001ad       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
-                COD_value   0x0001ae       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
-                TSS_value   0x0001af       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
-                NO3_value   0x0001b0       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
-                NH4_value   0x0001b1       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
-       timeChangedataSend   0x0001b2       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
-                     prom   0x0001b4       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                curr_byte   0x0001b7       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-               curr_entry   0x0001b9       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                 data_ptr   0x0001bb       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-            arrayPassword   0x0001be       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-              numberValue   0x0001c2       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-                       tp   0x0001c3       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-                        k   0x0001c4       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
-                     cnt0   0x0001c5       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\interrupt\interrupt.c
-                     cnt1   0x0001c7       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\interrupt\interrupt.c
-                  ack_bit   0x0001c9       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
-               duty_cycle   0x0001ca       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\pwm\pwm.c
+                     MODE   0x000157       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+              timeOfLight   0x000158       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+               cntOfLight   0x000159       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+                 key_code   0x00015a       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
+     arrayMaskOutputOfKey   0x00017a       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
+      arrayMaskInputOfKey   0x00017e       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\button_matrix\button.c
+             timer0_value   0x000182       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+             timer1_value   0x000184       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+             timer2_value   0x000186       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+             timer3_value   0x000188       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+              flag_timer0   0x00018a       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+              flag_timer1   0x00018b       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+              flag_timer2   0x00018c       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+              flag_timer3   0x00018d       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+                   v_cnt0   0x00018e       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+                   v_cnt1   0x000190       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+               timer0_cnt   0x000192       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+               timer1_cnt   0x000194       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+               timer2_cnt   0x000196       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+               timer3_cnt   0x000198       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+                time0_MUL   0x00019a       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+                time1_MUL   0x00019c       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+                time2_MUL   0x00019e       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+                time3_MUL   0x0001a0       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\timer\timer.c
+             statusSim900   0x0001a2       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+             WaitResponse   0x0001a3       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+            statusReceive   0x0001a4       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+flagOfDataReceiveComplete   0x0001a5       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+           indexOfMachine   0x0001a6       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+       indexOfDataReceive   0x0001a7       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+          indexOfdataSend   0x0001a8       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+      numberOfDataReceive   0x0001a9       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+         numberOfDataSend   0x0001aa       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+                tempCount   0x0001ab       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+               TEMP_value   0x0001ac       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+                 pH_value   0x0001ad       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+               FLOW_value   0x0001ae       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+                COD_value   0x0001af       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+                TSS_value   0x0001b0       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+                NO3_value   0x0001b1       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+                NH4_value   0x0001b2       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+       timeChangedataSend   0x0001b3       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\simulate_machine\simulate_machine.c
+               clockState   0x0001b5       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+                   second   0x0001b6       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+                   minute   0x0001b7       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+                     hour   0x0001b8       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+                temp_hour   0x0001b9       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+              temp_minute   0x0001ba       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+              temp_second   0x0001bb       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+                late_hour   0x0001bc       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+              late_minute   0x0001bd       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+              late_second   0x0001be       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+                    blink   0x0001bf       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\clock\simu_clock.c
+                     prom   0x0001c1       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                curr_byte   0x0001c4       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+               curr_entry   0x0001c6       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                 data_ptr   0x0001c8       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+            arrayPassword   0x0001cb       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+              numberValue   0x0001cf       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+                       tp   0x0001d0       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+                        k   0x0001d1       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c
+                     cnt0   0x0001d2       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\interrupt\interrupt.c
+                     cnt1   0x0001d4       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\interrupt\interrupt.c
+                  ack_bit   0x0001d6       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\i2c\i2c.c
+               duty_cycle   0x0001d7       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\pwm\pwm.c
                  UserFont   0x000f00       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
                 statusLCD   0x000f40       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
                 LcdScreen   0x000f41       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
@@ -1031,16 +1090,16 @@ flagOfDataReceiveComplete   0x0001a4       data     extern D:\GitHub\Traffic-Lig
               current_row   0x000f7b       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
               current_col   0x000f7d       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\lcd\lcd.c
                     speed   0x000f7f       data     extern D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\pwm\pwm.c
-                PORTAbits   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     PORTA   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                PORTBbits   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                PORTAbits   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     PORTB   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                PORTCbits   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                PORTBbits   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     PORTC   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                PORTDbits   0x000f83       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                PORTCbits   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     PORTD   0x000f83       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                PORTEbits   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                PORTDbits   0x000f83       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     PORTE   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                PORTEbits   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      LATA   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                  LATAbits   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                  LATBbits   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
@@ -1049,42 +1108,42 @@ flagOfDataReceiveComplete   0x0001a4       data     extern D:\GitHub\Traffic-Lig
                  LATCbits   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      LATD   0x000f8c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                  LATDbits   0x000f8c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                 LATEbits   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      LATE   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                TRISAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                    TRISA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 LATEbits   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      DDRA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                  DDRAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                    TRISB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                TRISBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                 DDRBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                TRISAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    TRISA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      DDRB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 DDRBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                TRISBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    TRISB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      DDRC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 DDRCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     TRISC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                 TRISCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                 DDRCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                 DDRDbits   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                     DDRD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     TRISD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                 TRISDbits   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                    TRISE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     DDRD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 DDRDbits   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                  DDREbits   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    TRISE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                 TRISEbits   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      DDRE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
               OSCTUNEbits   0x000f9b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                   OSCTUNE   0x000f9b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                  PIE1bits   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      PIE1   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                     PIR1   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                  PIR1bits   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                 IPR1bits   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     PIR1   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      IPR1   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 IPR1bits   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      PIE2   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                  PIE2bits   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                     PIR2   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                  PIR2bits   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                 IPR2bits   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     PIR2   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      IPR2   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 IPR2bits   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    EECON1   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                EECON1bits   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    EECON2   0x000fa7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
@@ -1093,8 +1152,8 @@ flagOfDataReceiveComplete   0x0001a4       data     extern D:\GitHub\Traffic-Lig
                    EEADRH   0x000faa       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                 RCSTAbits   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     RCSTA   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                TXSTAbits   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     TXSTA   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                TXSTAbits   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     TXREG   0x000fad       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     RCREG   0x000fae       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     SPBRG   0x000faf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
@@ -1105,30 +1164,30 @@ flagOfDataReceiveComplete   0x0001a4       data     extern D:\GitHub\Traffic-Lig
                     TMR3H   0x000fb3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                 CMCONbits   0x000fb4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     CMCON   0x000fb4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-               CVRCONbits   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    CVRCON   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+               CVRCONbits   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                   ECCP1AS   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
               ECCP1ASbits   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                   PWM1CON   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
               PWM1CONbits   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                  BAUDCON   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
               BAUDCONbits   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  BAUDCON   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                   BAUDCTL   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
               BAUDCTLbits   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                   CCP2CON   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
               CCP2CONbits   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                    CCPR2   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    CCPR2L   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    CCPR2   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    CCPR2H   0x000fbc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                  CCP1CON   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
               CCP1CONbits   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                    CCPR1   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  CCP1CON   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    CCPR1L   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    CCPR1   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    CCPR1H   0x000fbf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-               ADCON2bits   0x000fc0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    ADCON2   0x000fc0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-               ADCON1bits   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+               ADCON2bits   0x000fc0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    ADCON1   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+               ADCON1bits   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    ADCON0   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                ADCON0bits   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     ADRES   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm

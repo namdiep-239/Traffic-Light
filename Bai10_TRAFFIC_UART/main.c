@@ -150,6 +150,7 @@ unsigned char rushOfYellowPhase1 = 3;
 unsigned char rushOfGreenPhase2 = 10;
 unsigned char rushOfYellowPhase2 = 5;
 
+unsigned char MODE = 'X';
 
 unsigned char timeOfLight = 0;
 unsigned char cntOfLight = 0;
@@ -178,14 +179,16 @@ void main(void)
 	{
             while (!flag_timer3);
             flag_timer3 = 0;
+            
             scan_key_matrix_with_uart(); // 8 button
 //            scan_key_matrix();
+            
             k = (k + 1)% 20;
+            if (k == 0) clock_run();  //simulator clock
+            
             DisplayDataReceive();
             UartDataReceiveProcess();
-//            TrafficLight();
             MainMenu();
-
 //            DisplayLcdScreenOld(); //Output process 14ms vs 10ms with no timer
             DisplayLcdScreen();
 	}
@@ -210,7 +213,7 @@ void init_system(void)
     lcd_init();
     init_key_matrix_with_uart_i2c();
     init_interrupt();
-    init_i2c();
+//    init_i2c();
     init_uart();
     lcd_clear();
     LcdClearS();
@@ -221,7 +224,7 @@ void init_system(void)
     SetTimer3_ms(50); //Chu ky thuc hien viec xu ly input,proccess,output
     //PORTAbits.RA0 = 1;
     
-    //g?i hàm này ?? dùng các icon
+    //goi hàm này de dùng các icon
     init_user_defined_char();
 }
 
@@ -460,10 +463,12 @@ void TrafficLight()
             Phase1_GreenOn();
             Phase1_RedOff();
             Phase2_RedOn();
-            LcdPrintStringS(0,0,"PHASE1_GREEN:   ");
-            LcdPrintNumS(0,14,timeOfLight);
-            LcdPrintCharS(1,0, LONG_LEFT_ARROW);
-
+            LcdPrintStringS(1,0,"PHASE1_GREEN:   ");
+            LcdPrintNumS(1,14,timeOfLight);
+            LcdPrintCharS(0,0, LONG_LEFT_ARROW);
+            DisplayRealTime();
+            LcdPrintCharS(0,15, MODE);
+            
             if (timeOfLight == 0)
             {
                 statusOfLight = PHASE1_YELLOW;
@@ -474,10 +479,12 @@ void TrafficLight()
         case PHASE1_YELLOW:
             Phase1_YellowOn();
             Phase2_RedOn();
-            LcdPrintStringS(0,0,"PHASE1_YELLOW:  ");
-            LcdPrintNumS(0,14,timeOfLight);
-            LcdPrintCharS(1,0, LONG_LEFT_ARROW);
-
+            LcdPrintStringS(1,0,"PHASE1_YELLOW:  ");
+            LcdPrintNumS(1,14,timeOfLight);
+            LcdPrintCharS(0,0, LONG_LEFT_ARROW);
+            DisplayRealTime();
+            LcdPrintCharS(0,15, MODE);
+            
             if (timeOfLight == 0)
             {
                 statusOfLight = PHASE2_GREEN;
@@ -489,9 +496,11 @@ void TrafficLight()
             Phase2_GreenOn();
             Phase2_RedOff();
             Phase1_RedOn();
-            LcdPrintStringS(0,0,"PHASE2_GREEN:   ");
-            LcdPrintNumS(0,14,timeOfLight);
-            LcdPrintCharS(1,0, LONG_LEFT_ARROW);
+            LcdPrintStringS(1,0,"PHASE2_GREEN:   ");
+            LcdPrintNumS(1,14,timeOfLight);
+            LcdPrintCharS(0,0, LONG_LEFT_ARROW);
+            DisplayRealTime();
+            LcdPrintCharS(0,15, MODE);
 
             if (timeOfLight == 0)
             {
@@ -503,9 +512,11 @@ void TrafficLight()
         case PHASE2_YELLOW:
             Phase2_YellowOn();
             Phase1_RedOn();
-            LcdPrintStringS(0,0,"PHASE2_YELLOW:  ");
-            LcdPrintNumS(0,14,timeOfLight);
-            LcdPrintCharS(1,0, LONG_LEFT_ARROW);
+            LcdPrintStringS(1,0,"PHASE2_YELLOW:  ");
+            LcdPrintNumS(1,14,timeOfLight);
+            LcdPrintCharS(0,0, LONG_LEFT_ARROW);
+            DisplayRealTime();
+            LcdPrintCharS(0,15, MODE);
 
             if (timeOfLight == 0)
             {
@@ -523,15 +534,19 @@ void TrafficLight()
             {
                 Phase1_YellowOn();
                 Phase2_YellowOn();
-                LcdPrintLineS(0, "   SLOWLY RUN!  ");
-                LcdPrintCharS(1,0, LONG_LEFT_ARROW);
+                LcdPrintLineS(1, "   SLOWLY RUN!  ");
+                LcdPrintCharS(0,0, LONG_LEFT_ARROW);
+                DisplayRealTime();
+                LcdPrintCharS(0,15, MODE);
             }
             else
             {
                 Phase1_YellowOff();
                 Phase2_YellowOff();
-                LcdPrintLineS(0, "              ");
-                LcdPrintCharS(1,0, LONG_LEFT_ARROW);
+                LcdPrintLineS(1, "              ");
+                LcdPrintCharS(0,0, LONG_LEFT_ARROW);
+                DisplayRealTime();
+                LcdPrintCharS(0,15, MODE);
             }
             break;
         default:
@@ -911,6 +926,8 @@ void MainMenu() {
             timeOfYellowPhase1 = normalOfYellowPhase1;
             timeOfGreenPhase2 = normalOfGreenPhase2;
             timeOfYellowPhase2 = normalOfYellowPhase2;
+            //update MODE
+            MODE = 'N';
             
             TrafficLight();
             
@@ -926,6 +943,8 @@ void MainMenu() {
             timeOfYellowPhase1 = rushOfYellowPhase1;
             timeOfGreenPhase2 = rushOfGreenPhase2;
             timeOfYellowPhase2 = rushOfYellowPhase2;
+            //update MODE
+            MODE = 'R';
             
             TrafficLight();
             
@@ -936,7 +955,11 @@ void MainMenu() {
             break;
             
         case SLOW:
+            //update MODE
+            MODE = 'S';
+            //update state
             statusOfLight = WAIT;
+            
             TrafficLight();
             if (isButtonBack()) {
                 option = DISPLAY;

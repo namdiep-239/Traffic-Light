@@ -1,119 +1,126 @@
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 181 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 184 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 185 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 183 : call of function without prototype
 Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 187 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 189 : call of function without prototype
 Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 190 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 210 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 211 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 191 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 193 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 213 : call of function without prototype
 Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 214 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 215 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 216 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 225 : call of function without prototype
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 277 : suspicious pointer conversion
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 278 : suspicious pointer conversion
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 279 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 280 : call of function without prototype
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 288 : suspicious pointer conversion
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 292 : suspicious pointer conversion
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 301 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 306 : call of function without prototype
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 313 : suspicious pointer conversion
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 314 : call of function without prototype
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 320 : suspicious pointer conversion
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 463 : suspicious pointer conversion
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 477 : suspicious pointer conversion
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 492 : suspicious pointer conversion
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 506 : suspicious pointer conversion
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 526 : suspicious pointer conversion
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 533 : suspicious pointer conversion
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 560 : call of function without prototype
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 589 : suspicious pointer conversion
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 591 : suspicious pointer conversion
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 596 : suspicious pointer conversion
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 599 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 603 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 608 : call of function without prototype
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 614 : suspicious pointer conversion
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 616 : suspicious pointer conversion
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 621 : suspicious pointer conversion
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 624 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 628 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 633 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 636 : call of function without prototype
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 647 : suspicious pointer conversion
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 649 : suspicious pointer conversion
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 654 : suspicious pointer conversion
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 657 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 661 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 666 : call of function without prototype
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 672 : suspicious pointer conversion
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 674 : suspicious pointer conversion
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 679 : suspicious pointer conversion
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 682 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 686 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 691 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 694 : call of function without prototype
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 705 : suspicious pointer conversion
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 707 : suspicious pointer conversion
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 712 : suspicious pointer conversion
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 715 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 719 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 724 : call of function without prototype
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 730 : suspicious pointer conversion
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 732 : suspicious pointer conversion
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 737 : suspicious pointer conversion
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 740 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 744 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 749 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 752 : call of function without prototype
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 763 : suspicious pointer conversion
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 765 : suspicious pointer conversion
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 770 : suspicious pointer conversion
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 773 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 777 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 782 : call of function without prototype
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 788 : suspicious pointer conversion
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 790 : suspicious pointer conversion
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 795 : suspicious pointer conversion
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 798 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 802 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 807 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 810 : call of function without prototype
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 823 : suspicious pointer conversion
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 828 : suspicious pointer conversion
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 837 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 841 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 849 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 854 : call of function without prototype
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 863 : suspicious pointer conversion
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 869 : suspicious pointer conversion
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 875 : suspicious pointer conversion
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 883 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 887 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 893 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 897 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 217 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 218 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 219 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 228 : call of function without prototype
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 280 : suspicious pointer conversion
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 281 : suspicious pointer conversion
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 282 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 283 : call of function without prototype
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 291 : suspicious pointer conversion
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 295 : suspicious pointer conversion
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 304 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 309 : call of function without prototype
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 316 : suspicious pointer conversion
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 317 : call of function without prototype
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 323 : suspicious pointer conversion
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 466 : suspicious pointer conversion
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 469 : call of function without prototype
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 482 : suspicious pointer conversion
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 485 : call of function without prototype
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 499 : suspicious pointer conversion
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 502 : call of function without prototype
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 515 : suspicious pointer conversion
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 518 : call of function without prototype
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 537 : suspicious pointer conversion
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 539 : call of function without prototype
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 546 : suspicious pointer conversion
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 548 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 575 : call of function without prototype
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 604 : suspicious pointer conversion
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 606 : suspicious pointer conversion
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 611 : suspicious pointer conversion
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 614 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 618 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 623 : call of function without prototype
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 629 : suspicious pointer conversion
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 631 : suspicious pointer conversion
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 636 : suspicious pointer conversion
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 639 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 643 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 648 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 651 : call of function without prototype
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 662 : suspicious pointer conversion
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 664 : suspicious pointer conversion
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 669 : suspicious pointer conversion
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 672 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 676 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 681 : call of function without prototype
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 687 : suspicious pointer conversion
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 689 : suspicious pointer conversion
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 694 : suspicious pointer conversion
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 697 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 701 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 706 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 709 : call of function without prototype
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 720 : suspicious pointer conversion
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 722 : suspicious pointer conversion
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 727 : suspicious pointer conversion
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 730 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 734 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 739 : call of function without prototype
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 745 : suspicious pointer conversion
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 747 : suspicious pointer conversion
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 752 : suspicious pointer conversion
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 755 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 759 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 764 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 767 : call of function without prototype
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 778 : suspicious pointer conversion
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 780 : suspicious pointer conversion
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 785 : suspicious pointer conversion
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 788 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 792 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 797 : call of function without prototype
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 803 : suspicious pointer conversion
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 805 : suspicious pointer conversion
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 810 : suspicious pointer conversion
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 813 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 817 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 822 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 825 : call of function without prototype
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 838 : suspicious pointer conversion
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 843 : suspicious pointer conversion
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 852 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 856 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 864 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 869 : call of function without prototype
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 878 : suspicious pointer conversion
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 884 : suspicious pointer conversion
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 890 : suspicious pointer conversion
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 898 : call of function without prototype
 Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 902 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 919 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 934 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 943 : call of function without prototype
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 951 : suspicious pointer conversion
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 957 : suspicious pointer conversion
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 965 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 969 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 975 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 979 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 984 : call of function without prototype
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 993 : suspicious pointer conversion
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 999 : suspicious pointer conversion
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 908 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 912 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 917 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 936 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 953 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 966 : call of function without prototype
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 974 : suspicious pointer conversion
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 980 : suspicious pointer conversion
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 988 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 992 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 998 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 1002 : call of function without prototype
 Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 1007 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 1011 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 1017 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 1021 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 1026 : call of function without prototype
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 1041 : suspicious pointer conversion
-Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 1047 : suspicious pointer conversion
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 1055 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 1059 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 1065 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 1069 : call of function without prototype
-Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 1074 : call of function without prototype
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 1016 : suspicious pointer conversion
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 1022 : suspicious pointer conversion
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 1030 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 1034 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 1040 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 1044 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 1049 : call of function without prototype
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 1064 : suspicious pointer conversion
+Warning[2054] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 1070 : suspicious pointer conversion
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 1078 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 1082 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 1088 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 1092 : call of function without prototype
+Warning[2058] D:\GitHub\Traffic-Light\Bai10_TRAFFIC_UART\main.c 1097 : call of function without prototype

@@ -11,6 +11,7 @@
 #include "simulate_machine\simulate_machine.h"
 #include "adc\adc.h"
 #include "pwm\pwm.h"
+#include "clock\simu_clock.h" 
 
 
 

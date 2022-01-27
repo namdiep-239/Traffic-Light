@@ -12,6 +12,7 @@
       <itemPath>pwm/pwm.h</itemPath>
       <itemPath>simulate_machine/simulate_machine.h</itemPath>
       <itemPath>lcd/lcd.h</itemPath>
+      <itemPath>clock/simu_clock.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -30,6 +31,7 @@
       <itemPath>adc/adc.c</itemPath>
       <itemPath>pwm/pwm.c</itemPath>
       <itemPath>simulate_machine/simulate_machine.c</itemPath>
+      <itemPath>clock/simu_clock.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -47,6 +49,7 @@
     <Elem>adc</Elem>
     <Elem>pwm</Elem>
     <Elem>simulate_machine</Elem>
+    <Elem>clock</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
