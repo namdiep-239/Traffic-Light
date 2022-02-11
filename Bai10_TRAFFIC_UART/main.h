@@ -7,12 +7,12 @@
 #include "interrupt\interrupt.h"
 #include "lcd\lcd.h"
 #include "i2c\i2c.h"
-#include "uart\uart.h"
+//#include "uart\uart.h"
 #include "simulate_machine\simulate_machine.h"
-#include "adc\adc.h"
-#include "pwm\pwm.h"
-#include "clock\simu_clock.h" 
-
+//#include "adc\adc.h"
+//#include "pwm\pwm.h"
+//#include "clock\simu_clock.h" 
+#include "traffic_light\TrafficLight.h"
 
 
 

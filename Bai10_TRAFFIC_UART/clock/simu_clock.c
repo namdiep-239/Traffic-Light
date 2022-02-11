@@ -4,7 +4,8 @@
 #include "..\i2c\i2c.h"
 #include "..\lcd\lcd.h"
 #include "..\button_matrix\button.h"
-#include "main.h"
+#include "..\traffic_light\TrafficLight.h"
+//#include "main.h"
 
 #define     ADDRESS_FIRST_PROGRAM   0x20
 

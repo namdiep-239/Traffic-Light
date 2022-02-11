@@ -45,17 +45,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=uart/uart.c main.c button_matrix/button.c interrupt/interrupt.c timer/timer.c lcd/lcd.c i2c/i2c.c adc/adc.c pwm/pwm.c simulate_machine/simulate_machine.c clock/simu_clock.c
+SOURCEFILES_QUOTED_IF_SPACED=uart/uart.c main.c button_matrix/button.c interrupt/interrupt.c timer/timer.c lcd/lcd.c i2c/i2c.c adc/adc.c pwm/pwm.c simulate_machine/simulate_machine.c clock/simu_clock.c traffic_light/TrafficLight.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/uart/uart.o ${OBJECTDIR}/main.o ${OBJECTDIR}/button_matrix/button.o ${OBJECTDIR}/interrupt/interrupt.o ${OBJECTDIR}/timer/timer.o ${OBJECTDIR}/lcd/lcd.o ${OBJECTDIR}/i2c/i2c.o ${OBJECTDIR}/adc/adc.o ${OBJECTDIR}/pwm/pwm.o ${OBJECTDIR}/simulate_machine/simulate_machine.o ${OBJECTDIR}/clock/simu_clock.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/uart/uart.o.d ${OBJECTDIR}/main.o.d ${OBJECTDIR}/button_matrix/button.o.d ${OBJECTDIR}/interrupt/interrupt.o.d ${OBJECTDIR}/timer/timer.o.d ${OBJECTDIR}/lcd/lcd.o.d ${OBJECTDIR}/i2c/i2c.o.d ${OBJECTDIR}/adc/adc.o.d ${OBJECTDIR}/pwm/pwm.o.d ${OBJECTDIR}/simulate_machine/simulate_machine.o.d ${OBJECTDIR}/clock/simu_clock.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/uart/uart.o ${OBJECTDIR}/main.o ${OBJECTDIR}/button_matrix/button.o ${OBJECTDIR}/interrupt/interrupt.o ${OBJECTDIR}/timer/timer.o ${OBJECTDIR}/lcd/lcd.o ${OBJECTDIR}/i2c/i2c.o ${OBJECTDIR}/adc/adc.o ${OBJECTDIR}/pwm/pwm.o ${OBJECTDIR}/simulate_machine/simulate_machine.o ${OBJECTDIR}/clock/simu_clock.o ${OBJECTDIR}/traffic_light/TrafficLight.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/uart/uart.o.d ${OBJECTDIR}/main.o.d ${OBJECTDIR}/button_matrix/button.o.d ${OBJECTDIR}/interrupt/interrupt.o.d ${OBJECTDIR}/timer/timer.o.d ${OBJECTDIR}/lcd/lcd.o.d ${OBJECTDIR}/i2c/i2c.o.d ${OBJECTDIR}/adc/adc.o.d ${OBJECTDIR}/pwm/pwm.o.d ${OBJECTDIR}/simulate_machine/simulate_machine.o.d ${OBJECTDIR}/clock/simu_clock.o.d ${OBJECTDIR}/traffic_light/TrafficLight.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/uart/uart.o ${OBJECTDIR}/main.o ${OBJECTDIR}/button_matrix/button.o ${OBJECTDIR}/interrupt/interrupt.o ${OBJECTDIR}/timer/timer.o ${OBJECTDIR}/lcd/lcd.o ${OBJECTDIR}/i2c/i2c.o ${OBJECTDIR}/adc/adc.o ${OBJECTDIR}/pwm/pwm.o ${OBJECTDIR}/simulate_machine/simulate_machine.o ${OBJECTDIR}/clock/simu_clock.o
+OBJECTFILES=${OBJECTDIR}/uart/uart.o ${OBJECTDIR}/main.o ${OBJECTDIR}/button_matrix/button.o ${OBJECTDIR}/interrupt/interrupt.o ${OBJECTDIR}/timer/timer.o ${OBJECTDIR}/lcd/lcd.o ${OBJECTDIR}/i2c/i2c.o ${OBJECTDIR}/adc/adc.o ${OBJECTDIR}/pwm/pwm.o ${OBJECTDIR}/simulate_machine/simulate_machine.o ${OBJECTDIR}/clock/simu_clock.o ${OBJECTDIR}/traffic_light/TrafficLight.o
 
 # Source Files
-SOURCEFILES=uart/uart.c main.c button_matrix/button.c interrupt/interrupt.c timer/timer.c lcd/lcd.c i2c/i2c.c adc/adc.c pwm/pwm.c simulate_machine/simulate_machine.c clock/simu_clock.c
+SOURCEFILES=uart/uart.c main.c button_matrix/button.c interrupt/interrupt.c timer/timer.c lcd/lcd.c i2c/i2c.c adc/adc.c pwm/pwm.c simulate_machine/simulate_machine.c clock/simu_clock.c traffic_light/TrafficLight.c
 
 
 CFLAGS=
@@ -177,6 +177,14 @@ ${OBJECTDIR}/clock/simu_clock.o: clock/simu_clock.c  nbproject/Makefile-${CND_CO
 	@${DEP_GEN} -d ${OBJECTDIR}/clock/simu_clock.o 
 	@${FIXDEPS} "${OBJECTDIR}/clock/simu_clock.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
+${OBJECTDIR}/traffic_light/TrafficLight.o: traffic_light/TrafficLight.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/traffic_light" 
+	@${RM} ${OBJECTDIR}/traffic_light/TrafficLight.o.d 
+	@${RM} ${OBJECTDIR}/traffic_light/TrafficLight.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PICKIT2=1 -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/traffic_light/TrafficLight.o   traffic_light/TrafficLight.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/traffic_light/TrafficLight.o 
+	@${FIXDEPS} "${OBJECTDIR}/traffic_light/TrafficLight.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
 else
 ${OBJECTDIR}/uart/uart.o: uart/uart.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/uart" 
@@ -265,6 +273,14 @@ ${OBJECTDIR}/clock/simu_clock.o: clock/simu_clock.c  nbproject/Makefile-${CND_CO
 	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/clock/simu_clock.o   clock/simu_clock.c 
 	@${DEP_GEN} -d ${OBJECTDIR}/clock/simu_clock.o 
 	@${FIXDEPS} "${OBJECTDIR}/clock/simu_clock.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
+${OBJECTDIR}/traffic_light/TrafficLight.o: traffic_light/TrafficLight.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/traffic_light" 
+	@${RM} ${OBJECTDIR}/traffic_light/TrafficLight.o.d 
+	@${RM} ${OBJECTDIR}/traffic_light/TrafficLight.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/traffic_light/TrafficLight.o   traffic_light/TrafficLight.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/traffic_light/TrafficLight.o 
+	@${FIXDEPS} "${OBJECTDIR}/traffic_light/TrafficLight.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 endif
 

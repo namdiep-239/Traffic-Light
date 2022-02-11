@@ -1,6 +1,6 @@
 /* 
  * File:   simu_clock.h
- * Author: ngocc
+ * Author: 
  *
  * Created on December 13, 2021, 9:21 PM
  */
